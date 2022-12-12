@@ -1,13 +1,21 @@
 /* You can not modify anything in the HTML */
 /* You can only modify the CSS file */
 
-/***********************Universal Reset******************************/
+/***********************CSS Reset******************************/
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
-/*************************Navbar Section********************************/
+/************************Container******************************/
+.container{
+    width:100vw;
+    max-width: 1440px;
+    margin:0px auto;
+}
+
+/*************************Navbar Section************************/
 .navbar-container{
     margin:30px 45px;
     display: flex;

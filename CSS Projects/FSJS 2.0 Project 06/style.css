@@ -9,7 +9,7 @@ body {
   height: 100vh;
   width: 100vw;
   max-width: 1440px;
-  max-height: 768px;
+ margin : 0px auto;
   /* border: 3px solid yellow; */
   overflow: hidden;
   background-color: #2b2923;
