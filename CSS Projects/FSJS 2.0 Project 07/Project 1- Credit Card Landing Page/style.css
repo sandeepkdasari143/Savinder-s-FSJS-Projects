@@ -31,7 +31,7 @@ header {
 }
 nav {
   width: 85%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,4 +102,69 @@ nav > ul {
   width: 60px;
   z-index: -1;
   opacity: 0.8;
+}
+
+/****************************** Hero Section***************************/
+.hero {
+  background-color: #151515;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 100px;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/****************************** Hero Left Section***************************/
+/* .hero-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+ 
+}
+.hero-left-section h1 {
+  font-size: 4rem;
+  box-sizing: none;
+  position: relative;
+  width:400px;
+} */
+/****************************** Hero Right Section***************************/
+.hero-right-section {
+  /* border: 2px solid blue; */
+  display: flex;
+  position: relative;
+  width:100%;
+}
+.back-card-img {
+  width: 60%;
+  position: relative;
+  left: 435px;
+  top: -43px;
+  /* border: 2px solid yellow; */
+}
+.front-card-img {
+  position: relative;
+  width: 60%;
+  left: -140px;
+  /* border:2px solid orange; */
+}
+
+.hero-right-section > h1{
+  position: absolute;
+  font-size: 4.7rem;
+  /* border:2px solid rgb(194, 184, 184); */
+  width:850px;
+  color:#ececec;
+  font-family: sans-serif;
+  font-weight: 100;
+ line-height: 6rem;
+}
+.hero-right-section > h1>span{
+  font-family: "Poppins", sans-serif;
+  color:#f03fe7;
+  font-weight: bold;
 }
