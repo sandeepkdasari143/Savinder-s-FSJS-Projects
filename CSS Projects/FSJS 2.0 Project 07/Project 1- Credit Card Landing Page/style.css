@@ -261,5 +261,59 @@ nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 90px;
+}
+
+
+/************************Section Services***************************/
+
+.services{
+  width:100%;
+  border:2px solid red;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  background-color: #151515;
+}
+
+/***********************Services top side content*********************/
+.sevices-top-content{
+  height:50%;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-side-text{
+  padding : 20px 50px;
+  font-family: "Manrope", sans-serif;
+ font-size: 4rem;
+ font-weight: 700;
+ border: 2px solid pink;
+ text-align: left;
+ letter-spacing: 3px;
+ width: 58%;
+ align-self: center;
+}
+.left-side-text > span{
+ 
+  color: #cd2eca;
+  
+}
+.right-side-text{
+  width:31%;
+  align-self: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: #d1cfcf;
+}
+
+
+/***********************Services bottom side content******************/
+.sevices-bottom-content{
+  height:50%;
+  border: 2px solid rgb(236, 233, 5);
 }
