@@ -132,7 +132,7 @@ nav > ul {
 .hero-left-section > h1 {
   font-family: "Manrope", sans-serif;
   font-weight: 100;
-  font-size: 5.2rem;
+  font-size: 4.7rem;
 }
 
 .hero-left-section > h1 > span {
@@ -313,8 +313,8 @@ font-size: 4.5rem;
 }
 .right-side-text{
  position: relative;
- right:120px;
-  width:32%;
+ right:50px;
+  width:35%;
   align-self: center;
   font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
@@ -348,6 +348,7 @@ font-size: 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap:20px;
   align-items: center;
   position: relative;
   border-top-width: 2px;
@@ -424,6 +425,44 @@ font-size: 4.5rem;
   text-align: center;
 }
 
+/*****************************Card Choices Section******************************/
+.card-choices{
+ padding-top:80px;
+  width:100%;
+  height:1150px;
+  background-color: #fceffb;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+.card-choices > h3{
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.card-choices > h2{
+  font-size: 4rem;
+  color:#f801f4;
+  letter-spacing: 2px;
+}
 
 
-
+.card-choices > p{
+  padding-top:70px;
+font-size: 1.1rem;
+color:#525252;
+width:60%;
+letter-spacing: 2px;
+}
+.card-choices > p>span{
+  color:#813fada2
+}
+.vcards{
+  width:70%;
+  rotate: -90deg;
+  position:relative;
+  top:-130px;
+}
