@@ -613,12 +613,14 @@ nav > ul {
 .diamond-img > img {
   width: 400px;
   height: 400px;
+  transform: scaleX(-1);
 }
 
 .diamond-img > :nth-child(2) {
   position: absolute;
   right: 0px;
   top: 30px;
+ 
 }
 .banner-front {
   width: 100%;
