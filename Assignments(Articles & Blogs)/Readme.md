@@ -6,4 +6,4 @@
 3. [CSS Box Model (Padding, Margin, Border)](https://savinder.hashnode.dev/css-box-model)
 4. [CSS Media Query](https://savinder.hashnode.dev/a-detailed-guide-to-css-media-queries)
 5. [CSS Grid Model](https://savinder.hashnode.dev/css-grid-model-a-detailed-analysis-of-grid-layout)
-6. [Arrays in JavaScript & its methods](https://savinder.hashnode.dev/preview/639ea50261ca13837a1885ae)
+6. [Arrays in JavaScript & its methods](https://savinder.hashnode.dev/arrays-and-its-methods-in-javascript)
