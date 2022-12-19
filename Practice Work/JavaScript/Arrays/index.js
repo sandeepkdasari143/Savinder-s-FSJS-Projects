@@ -11,7 +11,7 @@
 // Here languages is the variable which is like a container inside which the data i.e array is stored.
 
 //Here our array contains multiple elements of same data type i.e string
-let languages = [ "python", "Ruby", "javascript", "kotlin", "PHP", "java" ]
+// let languages = [ "python", "Ruby", "javascript", "kotlin", "PHP", "java" ]
 
 
 // Here our array contains multiple elements of different data types even we can store an another array inside an array
@@ -40,11 +40,11 @@ console.log(num2); // [undefined, undefined, undefined, undefined, undefined]
 //Array Methods and properties
 
 //array.length
-let arr1 = ["Savinder", "Vasu", "Ravi", "Yash", "Azhar"]
+// let arr1 = ["Savinder", "Vasu", "Ravi", "Yash", "Azhar"]
 // console.log(arr1.length)
 
 //index
-console.log(arr1[0],arr1[1],arr1[2],arr1[3],arr1[4],arr1[5])
+// console.log(arr1[0],arr1[1],arr1[2],arr1[3],arr1[4],arr1[5])
 
 // We have this array fruits which contains 4 elements
 let fruits = ["apple", "bada apple", "chhota apple", "double apple"];
@@ -100,6 +100,64 @@ fruits[1] = "BADA APPLE";
 // num.sort()
 // console.log(num)
 
-let tvShows = ["Naruto", "Spiderman", "drangon ball z" ,"pokemon", "Batman", "Superman"]
-tvShows.sort();
-console.log(tvShows)
+// let tvShows = ["Naruto", "Spiderman", "drangon ball z" ,"pokemon", "Batman", "Superman"]
+// tvShows.sort();
+// console.log(tvShows)
+
+// for(let code of tvShows){
+//     console.log(`The unicode value of ${code[0]} is ${code.charCodeAt(0)}`)
+// }
+// console.log("p".charCodeAt(0))
+// console.log("u".charCodeAt(0))
+
+// let num = [5,88,95,6,15,36,17,56];
+// num.sort((a,b)=>{
+//     return b-a
+// });
+// console.log(num)
+
+// let arr = [1,2,3,4,5,6,7]
+// console.log(arr.length)
+// delete arr[3];
+// console.log(arr.length)
+// console.log(arr.fill("FSJS",1,5))
+// console.log(arr)
+
+// let names = ["Harry", "Ravi", "Savinder", "Harry","Robin"];
+// // console.log(names.indexOf("Harry1"))
+// console.log(names.lastIndexOf("Harry"))
+
+let firstName = "Savinder";
+// let arr1 = firstName.split("");
+// console.log(arr1);
+// let txt = "This FSJS 2.0 Bootcamp by Hitesh Sir & iNeuron is Awesome";
+// let arr2 = txt.split(" ");
+// console.log(arr2)
+// console.log(Array.isArray(firstName))
+// if(Array.isArray(firstName)){
+//     console.log(`${firstName} is an array`)
+// }else{
+//     console.log(`${firstName} is not an array`) 
+// }
+
+// let languages = [ "python", "Ruby", "javascript", "kotlin", "PHP", "java" ];
+// console.log(languages.includes("javascript"))
+// console.log(languages.includes("javascript",1));
+// console.log(languages.includes("javascript",2));
+// console.log(languages.includes("javascript",3));
+// console.log(languages.includes("javascript",4));
+
+// let num = "123456789"
+// let arr = Array.from(num,(element)=>{
+//     return element*element;
+// })
+// console.log(num)
+// console.log(arr)
+let arr = [1,2,3,4,5]
+// let arr2 = arr.map(element=>{
+//     return element*element*element;
+// })
+// console.log(arr2)
+for(let item of arr){
+    console.log(`The square of ${item} is ${item*item}`)
+}
