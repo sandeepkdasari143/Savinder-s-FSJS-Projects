@@ -168,6 +168,25 @@ nav {
 .group-img {
   width: 90%;
 }
+
+/********************************Logo Section******************************/
+.logo-section{
+    background-color: #1d1c1c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:3rem 5rem;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+
+
+
+
+
+
+
+
 /****************************Responsive Behaviour*****************************/
 @media screen and (max-width: 1150px) {
   .hero {
