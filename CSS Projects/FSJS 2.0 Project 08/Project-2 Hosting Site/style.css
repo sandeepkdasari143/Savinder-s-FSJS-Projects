@@ -12,6 +12,7 @@
   font-family: "Manrope", sans-serif;
   border-radius: 30px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 body {
@@ -170,24 +171,94 @@ nav {
 }
 
 /********************************Logo Section******************************/
-.logo-section{
-    background-color: #1d1c1c;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding:3rem 5rem;
-    flex-wrap: wrap;
-    gap:5rem;
+.logo-section {
+  background-color: #1d1c1c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5rem 5rem;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
 
+/********************************Services Section***************************/
+.service-section {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  padding: 7rem 7rem;
+}
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.services-container > h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.services-container > p {
+  text-align: center;
+  color: #969292;
+  font-size: 1.1rem;
+  /* border: 2px solid yellow; */
+  padding: 0 22rem;
+  line-height: 1.8rem;
+}
 
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  gap: 4rem;
+}
+.services-card {
+  border: 2px solid #969292b2;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  padding: 1.6rem 1rem 2.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.services-card > h2 {
+  text-align: center;
+}
+.services-card > p {
+  text-align: center;
+  color: #969292;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
 
+.card-2 {
+  border: none;
+  background-color: #111010;
+  color: #ffffff;
+  transform: translateY(-10%);
+  box-shadow: 0px 15px 20px 0px #1d1c1c3d;
+}
 
-
-
-
+.services-card:hover {
+  background-color: #111010;
+  color: #ffffff;
+}
+.card-2:hover {
+  background-color: #ffffff;
+  color: #111010;
+}
 
 /****************************Responsive Behaviour*****************************/
+@media screen and (max-width: 1300px) {
+  .service-section {
+    padding: 2rem;
+  }
+}
 @media screen and (max-width: 1150px) {
   .hero {
     padding: 2rem;
@@ -198,6 +269,18 @@ nav {
   nav {
     width: 100%;
     padding-left: 2rem;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+  .services-container > p {
+    padding: 0rem;
+  }
+  .card-2 {
+    transform: translateY(0%);
   }
 }
 @media screen and (max-width: 800px) {
