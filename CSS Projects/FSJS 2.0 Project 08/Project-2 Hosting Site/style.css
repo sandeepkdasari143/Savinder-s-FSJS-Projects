@@ -222,7 +222,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 1.7rem;
-  padding: 1.6rem 1rem 2.5rem 1rem;
+  padding: 1.6rem 1.5rem 2.5rem 1.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -253,6 +253,89 @@ nav {
   color: #111010;
 }
 
+/***************************Features-Section******************************/
+
+.features {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+  padding: 2rem 0 7rem 0;
+}
+.features-heading {
+  font-size: 2rem;
+  align-self: flex-start;
+  padding-left: 4rem;
+}
+
+.features-classification {
+  display: flex;
+  width: 90%;
+  gap: 3rem;
+  /* border: 2px solid green; */
+}
+
+.left-side-features {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid rgb(149, 175, 4); */
+  width: 100%;
+  gap: 1rem;
+}
+.left-features-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  border: 1px solid #969292b2;
+  width: 100%;
+  padding: 1.9rem 1.4rem;
+  border-radius: 65px;
+  color: #111010;
+  cursor: pointer;
+}
+
+.left-side-features > :first-child {
+  background-color: #0c8bfd;
+  color: #ffffff;
+}
+.left-features-items:hover {
+  background-color: #0c8bfd;
+  color: #ffffff;
+}
+
+.right-side-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px solid rgb(107, 14, 29); */
+  width: 70%;
+  background-color: #111010;
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+  border-radius: 48px;
+}
+.circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #dddbdb;
+}
+.right-features-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #dddbdb;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  background-color: #292828;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
 /****************************Responsive Behaviour*****************************/
 @media screen and (max-width: 1300px) {
   .service-section {
@@ -265,6 +348,7 @@ nav {
   }
 }
 
+/***************************************************************************************/
 @media screen and (max-width: 1075px) {
   nav {
     width: 100%;
@@ -282,7 +366,32 @@ nav {
   .card-2 {
     transform: translateY(0%);
   }
+  .features-heading {
+    align-self: center;
+    text-align: center;
+
+    padding: 0.5rem;
+  }
 }
+
+/************************************************************************************************/
+@media screen and (max-width: 970px) {
+  .features-heading {
+    align-self: flex-start;
+  }
+  .features-classification {
+    flex-wrap: wrap;
+  }
+  .right-side-features {
+    width: 100%;
+  }
+  .features-heading {
+    font-size: 1.5rem;
+    align-self: center;
+  }
+}
+
+/***********************************************************************************************/
 @media screen and (max-width: 800px) {
   nav {
     width: 100%;
@@ -316,6 +425,19 @@ nav {
     width: 60%;
   }
 }
+/*******************************************************************************************/
+
+@media screen and (max-width: 635px) {
+  .left-features-items {
+    font-size: 0.8rem;
+  }
+  .right-features-items {
+    font-size: 0.8rem;
+  }
+}
+
+/*******************************************************************************************/
+
 @media screen and (max-width: 518px) {
   .list-items-container {
     flex-direction: column;
@@ -366,6 +488,7 @@ nav {
     margin: 0;
   }
 }
+/****************************************************************************************/
 
 @media screen and (max-width: 420px) {
   .hero-left-section > h1 {
@@ -373,5 +496,24 @@ nav {
   }
   .hero-left-section > p {
     font-size: 0.8rem;
+  }
+  .left-features-items {
+    font-size: 0.6rem;
+  }
+  .right-features-items {
+    font-size: 0.6rem;
+  }
+  .features-heading {
+    font-size: 1.2rem;
+    align-self: center;
+    padding: 0.5rem;
+  }
+}
+
+/**********************************************************************************************/
+@media screen and (max-width: 390px) {
+  .left-features-items{
+    justify-content: center;
+    gap:1rem;
   }
 }

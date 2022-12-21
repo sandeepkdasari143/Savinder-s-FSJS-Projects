@@ -12,3 +12,4 @@ crossBtn.addEventListener("click", ()=>{
     hamburgetBtn.style.display = "inline";
     navbar.style.position = "absolute";
 })
+
