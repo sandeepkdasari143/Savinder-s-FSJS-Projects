@@ -336,7 +336,6 @@ nav {
   cursor: pointer;
 }
 
-
 /*******************************Price and Subscription plan Section*******************************/
 .subs-plan {
   background-color: #111010;
@@ -364,7 +363,7 @@ nav {
   gap: 2rem;
   padding: 5rem 5rem;
   color: #ffffff;
-  
+  /* border: 2px solid tomato; */
 }
 .subs-plan-card {
   display: flex;
@@ -375,9 +374,11 @@ nav {
   padding: 2rem 2rem;
   border-radius: 2.5rem;
   cursor: pointer;
-  
+ transition: all 0.3s;
 }
-
+.subs-plan-card:hover{
+  scale:1.1;
+}
 .subs-plan-card > h3 {
   font-size: 2rem;
 }
@@ -428,14 +429,101 @@ nav {
   color: #0c8bfd;
 }
 
+/************************************* Customer Review Section**********************************/
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+  gap: 3rem;
+  
+}
+.review-heading {
+  /* border:2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+}
+.review-heading > h1 {
+  font-size: 3rem;
+  width: 40%;
+  color: #111010;
+}
+.review-heading > p {
+  font-size: 1.1rem;
+  width: 40%;
+  color: #5a5656a4;
+}
+.review-card-container {
+  /* border:2px solid rgb(37, 179, 148); */
+  display: flex;
+  gap: 2rem;
+}
+.review-card {
+  border: 2px solid #969292;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  
+}
+.review-card-1 {
+  background-color: #070707;
+  color: #ffffff;
+}
+.review-card-1 > p {
+  color: #dbd9d9ef;
+}
+.review-card:hover {
+  scale: 1.1;
+}
+.customers-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
+.customer-identity {
+  font-size: 0.9rem;
+}
+
+.stars-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.review-card > p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.line {
+  height: 10px;
+  width: 100%;
+  background-color: #9692927a;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.line-blue {
+  border: 5px solid #0c8bfd;
+  width: 30%;
+  border-radius: 2rem;
+  position: absolute;
+}
 
 /****************************Responsive Behaviour*****************************/
 @media screen and (max-width: 1300px) {
   .service-section {
     padding: 2rem;
   }
-  .subs-plan-card-container{
+  .subs-plan-card-container {
     flex-wrap: wrap;
   }
 }
@@ -482,7 +570,6 @@ nav {
   }
 }
 
-
 /************************************************************************************************/
 @media screen and (max-width: 970px) {
   .features-heading {
@@ -498,6 +585,21 @@ nav {
     font-size: 1.5rem;
     align-self: center;
   }
+  .review-heading{
+    flex-direction: column;
+    padding: 1rem;
+    gap:1rem;
+  }
+  .review-heading>h1{
+    width: 100%;
+  }
+  .review-heading>p{
+    width: 100%;
+  }
+  .review-card-container{
+    flex-direction: column;
+  }
+
 }
 
 /***********************************************************************************************/
@@ -542,6 +644,28 @@ nav {
   }
   .right-features-items {
     font-size: 0.8rem;
+    align-self: top;
+  }
+  .subs-plan-heading-container > h1 {
+    font-size: 1.5rem;
+  }
+  .arrow {
+    height: 70%;
+  }
+  .subs-plan-card-container {
+    padding: 1rem;
+  }
+  .review-heading>h1{
+    font-size: 1.8rem;
+  }
+  .review-heading>p{
+    font-size: 1rem;
+  }
+  .review-card > p{
+    font-size: 1rem;
+  }
+  .review{
+    padding: 2rem 1rem;
   }
 }
 
