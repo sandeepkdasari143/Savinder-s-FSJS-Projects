@@ -374,10 +374,10 @@ nav {
   padding: 2rem 2rem;
   border-radius: 2.5rem;
   cursor: pointer;
- transition: all 0.3s;
+  transition: all 0.3s;
 }
-.subs-plan-card:hover{
-  scale:1.1;
+.subs-plan-card:hover {
+  scale: 1.1;
 }
 .subs-plan-card > h3 {
   font-size: 2rem;
@@ -428,6 +428,9 @@ nav {
   background-color: #ffffff;
   color: #0c8bfd;
 }
+.subs-card-2 > h1 > span {
+  color: #d6c9c9;
+}
 
 /************************************* Customer Review Section**********************************/
 .review {
@@ -437,7 +440,6 @@ nav {
   align-items: center;
   padding: 3rem 4rem;
   gap: 3rem;
-  
 }
 .review-heading {
   /* border:2px solid red; */
@@ -472,7 +474,6 @@ nav {
   border-radius: 1.5rem;
   transition: 0.3s;
   cursor: pointer;
-  
 }
 .review-card-1 {
   background-color: #070707;
@@ -519,48 +520,47 @@ nav {
 }
 
 /********************************Sine-up form section**************************/
-.sine-up-section{
+.sine-up-section {
   background-color: #070707;
-  color:#ffffff;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:3rem 5rem;
+  padding: 3rem 5rem;
   /* border: 2px solid red; */
-  gap:4rem;
+  gap: 4rem;
 }
-.sine-up-section>h1{
+.sine-up-section > h1 {
   font-size: 3rem;
   text-align: center;
-  padding:1rem 5rem;
-  
+  padding: 1rem 5rem;
 }
-.sine-up-form{
+.sine-up-form {
   background-color: #292828;
-  padding:3rem 3rem;
+  padding: 3rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
   border-radius: 30px;
   /* border:2px solid rgb(20, 196, 34); */
   flex-wrap: wrap;
 }
-.sine-up-form>input{
-  padding:1.3rem 2rem;
+.sine-up-form > input {
+  padding: 1.3rem 2rem;
   background-color: #494747;
   border: none;
   color: #ffffff;
   border-radius: 30px;
-  font-size:1rem ;
+  font-size: 1rem;
 }
-.sine-up-form>input:focus{
+.sine-up-form > input:focus {
   outline: none;
 }
-.sine-up-form>input::placeholder{
- color:#ffffff;
- font-size: 1.0rem;
- color: #969292;
+.sine-up-form > input::placeholder {
+  color: #ffffff;
+  font-size: 1rem;
+  color: #969292;
 }
 
 .sineup-btn {
@@ -573,6 +573,56 @@ nav {
   color: #111010;
   background-color: #ffffff;
 }
+
+
+
+
+/********************************Footer**********************************************/
+footer {
+  background-color: #070707;
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem;
+  color: #b1b1b1;
+  gap: 3rem;
+}
+footer > hr {
+  border: 1px solid rgba(139, 139, 139, 0.377);
+}
+.footer-items-container {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  /* border: 1px solid pink; */
+}
+.footer-items > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.footer-items > h1 {
+  font-size: 1.1rem;
+}
+.footer-items > ul > li {
+  font-size: 0.8rem;
+}
+.footer-items > ul > li:hover{
+  color:#ffffff;
+  cursor: pointer;
+}
 /****************************Responsive Behaviour*****************************/
 @media screen and (max-width: 1300px) {
   .service-section {
@@ -581,23 +631,23 @@ nav {
   .subs-plan-card-container {
     flex-wrap: wrap;
   }
- 
 }
 @media screen and (max-width: 1150px) {
   .hero {
     padding: 2rem;
   }
-  .sine-up-section>h1{
+  .sine-up-section > h1 {
     font-size: 2.5rem;
-    padding:0;
+    padding: 0;
   }
-  .sine-up-form{
+  .sine-up-form {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap:2.5rem;
+    gap: 2.5rem;
   }
- 
 }
+
+
 
 /***************************************************************************************/
 @media screen and (max-width: 1075px) {
@@ -633,7 +683,6 @@ nav {
     font-size: 2.5rem;
     text-align: center;
     align-self: center;
-    
   }
 }
 
@@ -652,21 +701,20 @@ nav {
     font-size: 1.5rem;
     align-self: center;
   }
-  .review-heading{
+  .review-heading {
     flex-direction: column;
     padding: 1rem;
-    gap:1rem;
+    gap: 1rem;
   }
-  .review-heading>h1{
+  .review-heading > h1 {
     width: 100%;
   }
-  .review-heading>p{
+  .review-heading > p {
     width: 100%;
   }
-  .review-card-container{
+  .review-card-container {
     flex-direction: column;
   }
-
 }
 
 /***********************************************************************************************/
@@ -702,10 +750,11 @@ nav {
   .hero-right-section {
     width: 60%;
   }
-  .sine-up-section{
-    padding:2rem 2rem;
+  .sine-up-section {
+    padding: 2rem 2rem;
   }
 }
+
 /*******************************************************************************************/
 
 @media screen and (max-width: 635px) {
@@ -725,25 +774,24 @@ nav {
   .subs-plan-card-container {
     padding: 1rem;
   }
-  .review-heading>h1{
+  .review-heading > h1 {
     font-size: 1.8rem;
   }
-  .review-heading>p{
+  .review-heading > p {
     font-size: 1rem;
   }
-  .review-card > p{
+  .review-card > p {
     font-size: 1rem;
   }
-  .review{
+  .review {
     padding: 2rem 1rem;
   }
-  .sine-up-section>h1{
+  .sine-up-section > h1 {
     font-size: 1.8rem;
   }
-  .sine-up-form{
+  .sine-up-form {
     justify-content: center;
   }
- 
 }
 /*******************************************************************************************/
 
@@ -817,11 +865,11 @@ nav {
     align-self: center;
     padding: 0.5rem;
   }
-  .sine-up-form{
-    padding:2rem 0.5rem;
+  .sine-up-form {
+    padding: 2rem 0.5rem;
   }
-  
 }
+
 
 /**********************************************************************************************/
 @media screen and (max-width: 390px) {
@@ -829,13 +877,13 @@ nav {
     justify-content: center;
     gap: 1rem;
   }
-  .sine-up-form>input{
-    padding:1rem;
+  .sine-up-form > input {
+    padding: 1rem;
   }
-  .subs-plan-card{
-    padding:2rem 1rem;
+  .subs-plan-card {
+    padding: 2rem 1rem;
   }
- .subs-plan{
-  gap:5rem;
- }
+  .subs-plan {
+    gap: 5rem;
+  }
 }
