@@ -1,4 +1,4 @@
-### Assignments (Blogs & Articles) Link
+# Assignments (Blogs & Articles) Link
 ### Follow the below links
 
 1. [CSS Flexbox & it's properties](https://savinder.hashnode.dev/css-flexbox-its-properties)
@@ -8,7 +8,7 @@
 5. [CSS Grid Model](https://savinder.hashnode.dev/css-grid-model-a-detailed-analysis-of-grid-layout)
 6. [Arrays in JavaScript & its methods](https://savinder.hashnode.dev/arrays-and-its-methods-in-javascript)
 
-### CSS Projects Link
+# HTML & CSS Projects Link
 ### Follow the below links
 
 1. [CSS Project-1 SEO Master](https://savinder-seo-master.netlify.app/)
@@ -17,8 +17,8 @@
 4. [CSS Project-4 Calm | Be Focus & Productive](https://savinder-calm-music.netlify.app/)
 5. [CSS Project-5 Medifine | We Care For You](https://savinder-medifine.netlify.app/)
 6. [CSS Project-6 XYZ Advocates | Truth Prevails](https://savinder-xyz-advocates.netlify.app/)
+7. [CSS Project-7 XYZ Credit Card Landing Page](https://savinder-credit-card-page.netlify.app/)
 
 
-
-### Tailwind Project Link
+# Tailwind Project Link
 [VS Code Clone](https://savinder-vs-code-clone.netlify.app/)
