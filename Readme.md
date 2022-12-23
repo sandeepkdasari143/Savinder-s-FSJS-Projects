@@ -17,7 +17,7 @@
 4. [CSS Project-4 Calm | Be Focus & Productive](https://savinder-calm-music.netlify.app/)
 5. [CSS Project-5 Medifine | We Care For You](https://savinder-medifine.netlify.app/)
 6. [CSS Project-6 XYZ Advocates | Truth Prevails](https://savinder-xyz-advocates.netlify.app/)
-7. [CSS Project-7 XYZ Credit Card Landing Page](https://savinder-credit-card-page.netlify.app/)
+7. [CSS Project-7 Credit Card Landing Page](https://savinder-credit-card-page.netlify.app/)
 
 
 # Tailwind Project Link
