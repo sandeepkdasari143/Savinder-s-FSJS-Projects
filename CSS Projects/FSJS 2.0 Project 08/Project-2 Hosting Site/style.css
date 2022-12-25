@@ -563,13 +563,13 @@ nav {
   color: #969292;
 }
 
-.sineup-btn {
+.signup-btn {
   padding: 1rem 2.4rem;
   font-size: 1rem;
   color: white;
   background-color: #0c8bfd;
 }
-.sineup-btn:hover {
+.signup-btn:hover {
   color: #111010;
   background-color: #ffffff;
 }
