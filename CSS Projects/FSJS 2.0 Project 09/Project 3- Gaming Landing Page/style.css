@@ -49,6 +49,13 @@
 .fill-btn:hover::before {
   transform: scaleX(1);
 }
+.heading {
+  text-align: center;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
 
 /****************************body**************************************/
 body {
@@ -135,10 +142,10 @@ nav {
 .hero-heading > h1 {
   padding: 5px 0;
 }
-.hero-para {
+.para {
   color: var(--gray);
 }
-.hero-para > p {
+.para > p {
   padding: 4px 0;
 }
 .hero-btn-container {
@@ -203,13 +210,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 2em;
-}
-.war-game-heading {
-  text-align: center;
-  font-size: 1.7rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
 }
 
 .game-card-conatiner {
@@ -276,6 +276,60 @@ nav {
   color: var(--white);
   font-size: 0.9rem;
 }
+
+/***********************************Explore More Section********************************/
+.explore-section {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 7em 1em;
+  flex-wrap: wrap;
+}
+.explore-left-content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.explore-left-content > img {
+  width: 100%;
+  min-width: 28px;
+  max-width: 600px;
+  min-height: 330px;
+}
+.explore-btn-container {
+  display: flex;
+  gap: 2em;
+}
+.explore-btn {
+  background-color: var(--tomato);
+  color: var(--white);
+}
+.explore-btn:hover {
+  outline: 1px solid var(--gray);
+  color: var(--tomato);
+  background-color: transparent;
+}
+.explore-btn-container > .fill-btn {
+  color: var(--tomato);
+  outline: 1px solid var(--tomato);
+  z-index: 3;
+}
+.explore-btn-container > .fill-btn:hover {
+  color: var(--white);
+}
+.explore-right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.explore-right-content > .heading {
+  text-align: start;
+  font-size: 1.5rem;
+}
+.explore-right-content > .para {
+  font: 0.8rem;
+}
 /*************************************************/
 @media screen and (max-width: 1100px) {
   nav {
@@ -290,6 +344,9 @@ nav {
   }
   .hero-right {
     gap: 2em;
+  }
+  .explore-left-content {
+    width: 100%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -322,7 +379,7 @@ nav {
   .popular-war-games {
     padding: 2em 0.3em;
   }
-  .war-game-heading {
+  .heading {
     font-size: 0.8rem;
   }
 }
