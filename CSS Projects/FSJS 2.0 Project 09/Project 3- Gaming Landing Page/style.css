@@ -13,7 +13,9 @@
   --black: #000308;
   --ligh-black: rgba(0, 0, 0, 0.438);
   --light-pink: #fde1db;
-  --medium-black:#080808c0;;
+  --medium-black: #080808c0;
+  --blue-dark: #000611;
+  --red: #ce1919;
 }
 
 /**************************Utility Classes******************************/
@@ -470,32 +472,89 @@ nav {
 }
 
 /***********************Get Started Section**************************/
-.get-started-section{
+.get-started-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:2em;
-  padding: 3em 4em;
-  background:url("./Assets/Photos/Rectangle\ 606.png");
+  gap: 2em;
+  padding: 6em 4em;
+  background: url("./Assets/Photos/Rectangle\ 606.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--medium-black);
   background-blend-mode: darken;
-  color:var(--white)
+  color: var(--white);
 }
-.get-started-section > .para{
+.get-started-section > .para {
   text-align: center;
 }
 
-.get-started-section > .btn{
-  padding:1em 2em;
+.get-started-section > .btn {
+  padding: 1em 2em;
   font-size: 1rem;
 }
 
+/*****************************Footer***************************/
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-color: var(--black);
+  padding-top: 4em;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-around;
+  color: var(--white);
+  flex-wrap: wrap;
+  gap: 3em;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1em;
+  font-size: 0.9rem;
+}
+.social-media-icons {
+  display: flex;
+  gap: 1em;
+}
+.social-media-icons>a{
+  transition: all 0.3s;
+}
+.social-media-icons>a:hover {
+  scale: 1.1;
+}
 
-/*************************************************/
+.social-media > img {
+  width: 8rem;
+}
+.footer-items > li {
+  color: var(--gray);
+  cursor: pointer;
+}
+.footer-items > li:hover {
+  color: var(--white);
+}
+
+.thin-line {
+  border-bottom: 1px solid var(--gray);
+}
+.created-by {
+  padding: 3em 0;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  text-align: center;
+}
+
+.fa-heart {
+  color: var(--red);
+}
+
+/**********************Media Queries***************************/
 @media screen and (max-width: 1190px) {
   .recom-container {
     justify-content: center;
@@ -584,8 +643,8 @@ nav {
     text-align: center;
     padding: 0;
   }
-  .get-started-section{
-    padding:3em 1em;
+  .get-started-section {
+    padding: 3em 1em;
   }
 }
 
