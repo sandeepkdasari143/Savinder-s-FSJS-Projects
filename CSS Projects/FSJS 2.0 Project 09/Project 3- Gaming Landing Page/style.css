@@ -630,6 +630,11 @@ footer {
   .recom-card > img {
     min-width: 250px;
   }
+  .explore-section {
+    padding:0em 1em 2em 1em;
+  }
+ 
+ 
 }
 
 @media screen and (max-width: 550px) {
@@ -643,6 +648,7 @@ footer {
   .recom-card-details {
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .recom-card-details > .para {
     text-align: center;
