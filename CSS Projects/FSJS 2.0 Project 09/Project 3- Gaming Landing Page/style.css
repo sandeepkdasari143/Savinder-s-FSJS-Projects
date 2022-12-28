@@ -13,6 +13,7 @@
   --black: #000308;
   --ligh-black: rgba(0, 0, 0, 0.438);
   --light-pink: #fde1db;
+  --medium-black:#080808c0;;
 }
 
 /**************************Utility Classes******************************/
@@ -80,7 +81,6 @@ main {
 
 /***************************Navbar************************************/
 nav {
-  /* border: 2px solid red; */
   padding: 2em 5em;
   display: flex;
   justify-content: space-between;
@@ -109,7 +109,6 @@ nav {
   gap: 2em;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 2px solid red; */
 }
 
 .sign-up-btn {
@@ -260,7 +259,6 @@ nav {
   width: 100%;
 }
 .games-detail {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -338,7 +336,6 @@ nav {
 /******************Recommendation Section**********/
 .recommendation {
   width: 100%;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   padding: 5em 4em;
@@ -347,7 +344,6 @@ nav {
 .top {
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid green; */
   flex-wrap: wrap;
   gap: 3em;
 }
@@ -355,7 +351,6 @@ nav {
   font-size: 1.5rem;
 }
 .top > .btn-container {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -380,7 +375,6 @@ nav {
 }
 
 .recom-container {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   gap: 3em;
@@ -389,7 +383,6 @@ nav {
 
 .recom-card {
   display: flex;
-  /* border: 2px solid rgb(80, 72, 26); */
   gap: 2em;
   width: 40%;
   min-width: 500px;
@@ -401,7 +394,6 @@ nav {
   min-width: 200px;
 }
 .recom-card-details {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -425,62 +417,84 @@ nav {
 }
 
 /***************************Most Played Games****************************/
-.most-palyed-games-section{
-  padding:4em 6em 4em 0;
+.most-palyed-games-section {
+  padding: 4em 6em 4em 0;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:2em;
+  gap: 2em;
   position: relative;
   z-index: 1;
 }
 
-.most-palyed-games-section > .heading{
-color:var(--white);
+.most-palyed-games-section > .heading {
+  color: var(--white);
 }
-.most-palyed-games-section > .para{
+.most-palyed-games-section > .para {
   font-size: 0.9rem;
-  /* border: 1px solid red; */
   align-self: flex-end;
-  padding : 2em 6em;
-  
+  padding: 2em 6em;
 }
-.game-of-the-world{
+.game-of-the-world {
   align-self: flex-end;
-  /* border: 1px solid red; */
   position: absolute;
-  right:0em;
-  top:40%;
+  right: 0em;
+  top: 40%;
   z-index: -1;
 }
-.most-palyed-games{
+.most-palyed-games {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:3em;
+  gap: 3em;
   flex-wrap: wrap;
 }
-.most-palyed-games>img{
-  max-width:400px;
+.most-palyed-games > img {
+  max-width: 400px;
   min-width: 250px;
-  
 }
-.image-1{
-  width:30%;
+.image-1 {
+  width: 30%;
   position: relative;
-  top:-5rem;
+  top: -5rem;
 }
-.image-2{
-  width:20%;
+.image-2 {
+  width: 20%;
   align-self: flex-end;
 }
-.image-3{
-  width:20%;
+.image-3 {
+  width: 20%;
   align-self: flex-end;
-  
 }
+
+/***********************Get Started Section**************************/
+.get-started-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2em;
+  padding: 3em 4em;
+  background:url("./Assets/Photos/Rectangle\ 606.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--medium-black);
+  background-blend-mode: darken;
+  color:var(--white)
+}
+.get-started-section > .para{
+  text-align: center;
+}
+
+.get-started-section > .btn{
+  padding:1em 2em;
+  font-size: 1rem;
+}
+
+
 /*************************************************/
 @media screen and (max-width: 1190px) {
   .recom-container {
@@ -513,22 +527,22 @@ color:var(--white);
   }
 }
 
-@media screen and (max-width : 970px){
-  .image-1{
+@media screen and (max-width: 970px) {
+  .image-1 {
     position: static;
   }
-  .image-2,.image-3{
+  .image-2,
+  .image-3 {
     align-self: center;
   }
-  .most-palyed-games-section{
-    padding:5em 1em;
+  .most-palyed-games-section {
+    padding: 5em 1em;
   }
-  .most-palyed-games-section > .para{
-    padding:0;
+  .most-palyed-games-section > .para {
+    padding: 0;
     align-self: center;
   }
 }
-
 
 @media screen and (max-width: 750px) {
   .hero-heading {
@@ -569,6 +583,9 @@ color:var(--white);
   .recom-card-details > .para {
     text-align: center;
     padding: 0;
+  }
+  .get-started-section{
+    padding:3em 1em;
   }
 }
 
