@@ -10,7 +10,7 @@
   --tomato: #f4694c;
   --gray: #776769;
   --white: #ffffff;
-  --black: #2222;
+  --black: #000308;
   --ligh-black: rgba(0, 0, 0, 0.438);
   --light-pink: #fde1db;
 }
@@ -424,6 +424,63 @@ nav {
   padding: 1em 2em;
 }
 
+/***************************Most Played Games****************************/
+.most-palyed-games-section{
+  padding:4em 6em 4em 0;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2em;
+  position: relative;
+  z-index: 1;
+}
+
+.most-palyed-games-section > .heading{
+color:var(--white);
+}
+.most-palyed-games-section > .para{
+  font-size: 0.9rem;
+  /* border: 1px solid red; */
+  align-self: flex-end;
+  padding : 2em 6em;
+  
+}
+.game-of-the-world{
+  align-self: flex-end;
+  /* border: 1px solid red; */
+  position: absolute;
+  right:0em;
+  top:40%;
+  z-index: -1;
+}
+.most-palyed-games{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:3em;
+  flex-wrap: wrap;
+}
+.most-palyed-games>img{
+  max-width:400px;
+  min-width: 250px;
+  
+}
+.image-1{
+  width:30%;
+  position: relative;
+  top:-5rem;
+}
+.image-2{
+  width:20%;
+  align-self: flex-end;
+}
+.image-3{
+  width:20%;
+  align-self: flex-end;
+  
+}
 /*************************************************/
 @media screen and (max-width: 1190px) {
   .recom-container {
@@ -455,6 +512,24 @@ nav {
     justify-content: center;
   }
 }
+
+@media screen and (max-width : 970px){
+  .image-1{
+    position: static;
+  }
+  .image-2,.image-3{
+    align-self: center;
+  }
+  .most-palyed-games-section{
+    padding:5em 1em;
+  }
+  .most-palyed-games-section > .para{
+    padding:0;
+    align-self: center;
+  }
+}
+
+
 @media screen and (max-width: 750px) {
   .hero-heading {
     font-size: 2rem;
