@@ -79,6 +79,7 @@ main {
   background-size: cover;
   background-color: var(--ligh-black);
   background-blend-mode: darken;
+  padding-bottom: 3em;
 }
 
 /***************************Navbar************************************/
@@ -522,10 +523,10 @@ footer {
   display: flex;
   gap: 1em;
 }
-.social-media-icons>a{
+.social-media-icons > a {
   transition: all 0.3s;
 }
-.social-media-icons>a:hover {
+.social-media-icons > a:hover {
   scale: 1.1;
 }
 
@@ -621,6 +622,10 @@ footer {
   }
   .recommendation {
     padding: 2em 1em;
+    gap: 6em;
+  }
+  .recom-container {
+    gap: 6em;
   }
   .recom-card > img {
     min-width: 250px;
