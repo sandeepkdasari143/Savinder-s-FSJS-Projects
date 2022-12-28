@@ -12,6 +12,7 @@
   --white: #ffffff;
   --black: #2222;
   --ligh-black: rgba(0, 0, 0, 0.438);
+  --light-pink: #fde1db;
 }
 
 /**************************Utility Classes******************************/
@@ -64,6 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 main {
   display: flex;
@@ -295,7 +297,9 @@ nav {
   width: 100%;
   min-width: 28px;
   max-width: 600px;
-  min-height: 330px;
+  height: 100%;
+  max-height: 350px;
+  min-height: 150px;
 }
 .explore-btn-container {
   display: flex;
@@ -330,7 +334,103 @@ nav {
 .explore-right-content > .para {
   font: 0.8rem;
 }
+
+/******************Recommendation Section**********/
+.recommendation {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 5em 4em;
+  gap: 3em;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid green; */
+  flex-wrap: wrap;
+  gap: 3em;
+}
+.top > .heading {
+  font-size: 1.5rem;
+}
+.top > .btn-container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top > .btn-container > .btn {
+  padding: 1em;
+}
+
+.top > .btn-container > .arrow-left {
+  background-color: var(--light-pink);
+}
+.top > .btn-container > .arrow-right {
+  background-color: var(--tomato);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  padding: 1.2em 0.5em;
+}
+.top > .btn-container > .arrow-right > img {
+  width: 1.8rem;
+}
+
+.recom-container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.recom-card {
+  display: flex;
+  /* border: 2px solid rgb(80, 72, 26); */
+  gap: 2em;
+  width: 40%;
+  min-width: 500px;
+  cursor: pointer;
+}
+
+.recom-card > img {
+  width: 20%;
+  min-width: 200px;
+}
+.recom-card-details {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+.head-text {
+  font-size: 1.2rem;
+}
+.head-text > h3 {
+  padding: 3px 0;
+}
+.mid-text {
+  color: var(--tomato);
+}
+.recom-card-details > .para {
+  font-size: 0.9rem;
+}
+.recom-card-details > .btn {
+  padding: 1em 2em;
+}
+
 /*************************************************/
+@media screen and (max-width: 1190px) {
+  .recom-container {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   nav {
     justify-content: center;
@@ -348,6 +448,12 @@ nav {
   .explore-left-content {
     width: 100%;
   }
+  .recom-container {
+    justify-content: center;
+  }
+  .top {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 750px) {
   .hero-heading {
@@ -359,6 +465,36 @@ nav {
   .war-game-heading {
     font-size: 1.2rem;
   }
+  .top {
+    justify-content: center;
+  }
+  .top > .heading {
+    font-size: 1.3rem;
+  }
+  .recommendation {
+    padding: 2em 1em;
+  }
+  .recom-card > img {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .recom-container {
+    justify-content: center;
+  }
+  .recom-card {
+    flex-wrap: wrap;
+    min-width: 250px;
+  }
+  .recom-card-details {
+    justify-content: center;
+    align-items: center;
+  }
+  .recom-card-details > .para {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -366,7 +502,7 @@ nav {
     padding: 2em 0.5em;
   }
   .hero-heading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .title > p {
     padding: 0;
@@ -381,5 +517,8 @@ nav {
   }
   .heading {
     font-size: 0.8rem;
+  }
+  .top > .heading {
+    font-size: 1rem;
   }
 }
