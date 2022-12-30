@@ -1,4 +1,5 @@
 # Assignments (Blogs & Articles) Link
+
 ### Follow the below links
 
 1. [CSS Flexbox & it's properties](https://savinder.hashnode.dev/css-flexbox-its-properties)
@@ -9,6 +10,7 @@
 6. [Arrays in JavaScript & its methods](https://savinder.hashnode.dev/arrays-and-its-methods-in-javascript)
 
 # HTML & CSS Projects Link
+
 ### Follow the below links
 
 1. [CSS Project-1 SEO Master](https://savinder-seo-master.netlify.app/)
@@ -19,7 +21,8 @@
 6. [CSS Project-6 XYZ Advocates | Truth Prevails](https://savinder-xyz-advocates.netlify.app/)
 7. [CSS Project-7 Credit Card Landing Page](https://savinder-credit-card-page.netlify.app/)
 8. [CSS Project-8 Web Hosting Site Landing Page](https://savinder-hosting-site-page.netlify.app/)
-
+9. [CSS Project-9 Game Website Landing Page](https://savinder-game-landing-page.netlify.app/)
 
 # Tailwind Project Link
+
 [VS Code Clone](https://savinder-vs-code-clone.netlify.app/)

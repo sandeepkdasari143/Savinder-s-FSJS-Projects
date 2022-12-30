@@ -9,3 +9,4 @@
 6. [CSS Project-6 XYZ Advocates | Truth Prevails](https://savinder-xyz-advocates.netlify.app/)
 7. [CSS Project-7 Credit Card Landing Page](https://savinder-credit-card-page.netlify.app/)
 8. [CSS Project-8 Web Hosting Site Landing Page](https://savinder-hosting-site-page.netlify.app/)
+9. [CSS Project-9 Game Website Landing Page](https://savinder-game-landing-page.netlify.app/)
