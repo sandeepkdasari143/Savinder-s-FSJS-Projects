@@ -1,0 +1,221 @@
+/*****************CSS Reset*******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  color: var(--color-black-001);
+}
+/*****************Declaring CSS Custom Variables**********/
+:root {
+  --color-blue-001: #6663e9;
+  --color-blue-002: #7d7bec;
+  --color-blue-003: #6663e8;
+  --color-grey-001: #a9aeb6;
+  --color-black-001: #181717;
+  --color-black-002: #27292e;
+  --color-black-003: #717377;
+  --color-black-004: #18171796;
+  --color-white-001: #ffffff;
+  --color-white-002: #cacaca;
+}
+
+/*************Utility Classes**************/
+.logo {
+  width: 12%;
+  min-width: 100px;
+}
+
+.list-items-conatiner {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.list-items > a {
+  text-decoration: none;
+  color: var(--color-grey-001);
+  transition: all 0.2s ease-in-out;
+}
+
+.list-items > a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--color-white-001);
+  transform: scaleX(0);
+  padding-bottom: 0.3em;
+  transition: all 0.2s ease-in-out;
+}
+.list-items > a:hover {
+  color: var(--color-white-001);
+}
+.list-items > a:hover::after {
+  transform: scaleX(1);
+}
+.btn-large {
+  all: unset;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color-blue-001);
+  color: var(--color-white-001);
+  font-size: 1rem;
+  padding: 1.1em 2.8em;
+  border-radius: 46px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-large:hover {
+  background-color: var(--color-white-001);
+  color: var(--color-blue-001);
+}
+.btn-small {
+}
+.heading-primary {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-white-001);
+}
+.heading-secondary {
+}
+.para {
+  font-family: sans-serif;
+  color: var(--color-white-002);
+  font-size: 1.2rem;
+}
+
+.para > p {
+  padding: 0.2em 0;
+}
+
+body {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  /* border: 2px solid red; */
+  font-family: "Manrope", sans-serif;
+}
+/***********************Main**********************************/
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 4em;
+  background-image: url("./Photos/mainBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--color-black-004);
+  background-blend-mode: darken;
+}
+
+/***********************Header & Navbar***********************/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid yellow; */
+  gap: 3em;
+  flex-wrap: wrap;
+  padding: 0 3em;
+}
+.nav-icons {
+  position: relative;
+}
+#hamburger-btn,
+#cross-btn {
+  color: var(--color-white-001);
+  cursor: pointer;
+  font-size: 1.6rem;
+  position: absolute;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar > .list-items-conatiner {
+  align-self: flex-end;
+}
+
+.line {
+  border-bottom: 1px solid var(--color-grey-001);
+  margin-top: 1.4em;
+}
+
+/*********************Hero***************************/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 2px solid rgb(177, 139, 17); */
+  gap: 1.8em;
+  padding: 8em 4em;
+}
+/*************************************Media Queries*********************************/
+@media screen and (max-width: 900px) {
+  .heading-primary {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main {
+    padding: 1em;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .hero {
+    padding: 4em 1em;
+    align-self: center;
+  }
+  .heading-primary {
+    font-size: 1rem;
+  }
+  .para {
+    font-size: 0.9rem;
+  }
+  .btn-large {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  .navbar {
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em 0;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar > .list-items-conatiner {
+    align-self: center;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: -110%;
+  }
+
+  #hamburger-btn {
+    display: inline;
+    z-index: 1;
+  }
+  #cross-btn {
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    align-items: center;
+  }
+  .heading-primary,
+  .para {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
