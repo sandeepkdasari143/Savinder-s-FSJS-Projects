@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 html {
   font-size: 16px;
@@ -116,7 +117,7 @@ body {
 /***********************Header & Navbar***********************/
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /* border: 1px solid yellow; */
   gap: 3em;
@@ -125,15 +126,33 @@ body {
 }
 .nav-icons {
   position: relative;
-}
-#hamburger-btn,
-#cross-btn {
-  color: var(--color-white-001);
-  cursor: pointer;
-  font-size: 1.6rem;
-  position: absolute;
   display: none;
-  transition: all 0.3s ease-in-out;
+}
+.hamburger {
+  height: 5px;
+  width: 40px;
+  margin: 0.5em 0;
+  background-color: var(--color-white-001);
+  cursor: pointer;
+  display: none;
+  transition: all 0.1s ease-in-out;
+}
+.cross {
+  height: 5px;
+  width: 35px;
+  position: absolute;
+  background-color: var(--color-white-001);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.cross-2 {
+  display: none;
+}
+.cross-1 {
+  transform: rotate(45deg);
+}
+.cross-3 {
+  transform: rotate(-45deg);
 }
 
 .navbar > .list-items-conatiner {
@@ -161,7 +180,7 @@ body {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .main {
     padding: 1em;
   }
@@ -196,17 +215,19 @@ body {
     /* border: 1px solid red; */
     flex-direction: column;
     width: 100%;
-    position: absolute;
     top: 100%;
     left: -110%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
   }
-
-  #hamburger-btn {
-    display: inline;
-    z-index: 1;
+  .nav-icons {
+    display: block;
+    align-self: flex-start;
+    justify-self: top;
+    position: relative;
   }
-  #cross-btn {
-    z-index: 1;
+  .hamburger {
+    display: block;
   }
 }
 @media screen and (max-width: 400px) {
