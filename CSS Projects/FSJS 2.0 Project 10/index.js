@@ -7,7 +7,6 @@ for (let x of hamburger) {
             y.classList.toggle("hamburger");
             y.classList.toggle("cross");
         }
-
         hamburger.forEach((element, index) => {
             console.log(element)
             if (element.classList.contains("cross")) {
@@ -22,6 +21,5 @@ for (let x of hamburger) {
                 document.getElementsByClassName("list-items-conatiner")[0].style.position = "absolute";
             }
         });
-
     })
 }

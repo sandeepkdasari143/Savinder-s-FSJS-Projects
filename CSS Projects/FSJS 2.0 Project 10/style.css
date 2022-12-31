@@ -112,6 +112,7 @@ body {
   background-size: cover;
   background-color: var(--color-black-004);
   background-blend-mode: darken;
+  position: relative;
 }
 
 /***********************Header & Navbar***********************/
@@ -174,12 +175,41 @@ body {
   gap: 1.8em;
   padding: 8em 4em;
 }
+
+/********************logo-container********************/
+.logo-container {
+  margin-top: 3em;
+  width: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3em 1.5em;
+  background-color: var(--color-white-001);
+  border-radius: 30px;
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  right:0;
+  margin: auto;
+}
+.logo-container > img {
+  width: 10%;
+ 
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.logo-container > img:hover {
+  scale: 1.2;
+}
+
 /*************************************Media Queries*********************************/
 @media screen and (max-width: 900px) {
   .heading-primary {
     font-size: 1.5rem;
   }
 }
+
 @media screen and (max-width: 800px) {
   .main {
     padding: 1em;
@@ -200,7 +230,13 @@ body {
   .btn-large {
     font-size: 0.8rem;
   }
+  .logo-container {
+    bottom:-10%;
+    padding:2em 1em;
+  }
+ 
 }
+
 @media screen and (max-width: 510px) {
   .navbar {
     flex-direction: column;
@@ -210,6 +246,7 @@ body {
     position: relative;
     transition: all 0.5s ease-in-out;
   }
+
   .navbar > .list-items-conatiner {
     align-self: center;
     /* border: 1px solid red; */
@@ -230,6 +267,7 @@ body {
     display: block;
   }
 }
+
 @media screen and (max-width: 400px) {
   .hero {
     align-items: center;
