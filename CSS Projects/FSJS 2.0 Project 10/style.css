@@ -318,7 +318,6 @@ body {
 .card-content {
   width: 310px;
   height: 320px;
-  /* border: 2px solid red; */
   border-radius: 30px;
   background-image: url("./Photos/cardImage1.png");
   background-repeat: no-repeat;
@@ -359,7 +358,6 @@ body {
 
 .card-details {
   display: flex;
-  /* border: 2px solid red; */
   gap: 3em;
   width: 90%;
   justify-content: space-around;
@@ -409,6 +407,63 @@ body {
   transform: rotateY(0.5turn);
 }
 
+/**********************************************Early-bird-booking**************************************/
+.early-bird {
+  padding: 7em 0;
+  background: var(--color-white-003);
+  display: flex;
+  flex-direction: column;
+  gap: 12em;
+}
+
+.early-bird-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  flex-wrap: wrap;
+}
+.early-bird-house {
+  padding: 1em 4em;
+  background-image: url("./Icons/featureImageBg1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 380px;
+  height: 400px;
+  min-width: 200px;
+  border-radius: 27px;
+  position: relative;
+  left: 2rem;
+  top: -5rem;
+}
+
+.early-bird-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+.early-bird-right > .heading-primary {
+  color: var(--color-black-002);
+}
+
+.early-bird-right > .para {
+  color: var(--color-black-003);
+}
+.early-bird > div:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.early-bird > div:nth-child(2) > .early-bird-house {
+  background-image: url("./Icons/featureImageBg2.png");
+}
+
 /**********************************************Media Queries*****************************************/
 @media screen and (max-width: 1000px) {
   .card-list-top,
@@ -417,11 +472,7 @@ body {
     gap: 5em;
     height: 100%;
   }
-  .house-cards-container {
-  }
 
-  .card {
-  }
   .card-content {
     gap: 5em;
   }
@@ -434,6 +485,9 @@ body {
   .card-4,
   .card-9 {
     align-self: center;
+  }
+  .early-bird-content {
+    gap: 2em;
   }
 }
 
@@ -497,6 +551,13 @@ body {
   }
   .hamburger {
     display: block;
+  }
+
+  .feature-image {
+    width: 150px;
+    height: 100%;
+    top: -1rem;
+    left: 2rem;
   }
 }
 
