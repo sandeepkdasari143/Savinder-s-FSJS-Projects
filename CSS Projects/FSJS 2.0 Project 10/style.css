@@ -1,4 +1,4 @@
-/*****************CSS Reset*******************/
+/*************************************************CSS Reset**************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ html {
   font-size: 16px;
   color: var(--color-black-001);
 }
-/*****************Declaring CSS Custom Variables**********/
+/**************************************Declaring CSS Custom Variables****************************************/
 :root {
   --color-blue-001: #6663e9;
   --color-blue-002: #7d7bec;
@@ -21,9 +21,11 @@ html {
   --color-black-004: #18171796;
   --color-white-001: #ffffff;
   --color-white-002: #cacaca;
+  --color-white-003: #f5f7f9;
+  --color-green-001: #3b802d;
 }
 
-/*************Utility Classes**************/
+/*******************************************Utility Classes************************************************/
 .logo {
   width: 12%;
   min-width: 100px;
@@ -102,7 +104,38 @@ html {
 } */
 
 .btn-small {
+  all: unset;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color-blue-001);
+  color: var(--color-white-001);
+  font-size: 1rem;
+  padding: 0.7em 2em;
+  border-radius: 27px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
+.btn-small::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-black-001);
+  transform: scaleX(0);
+  border-radius: 27px;
+  transition: all 0.2s ease-in-out;
+  transform-origin: left;
+  z-index: -1;
+}
+.btn-small:hover::before {
+  transform: scaleX(1);
+}
+
 .heading-primary {
   font-size: 2rem;
   font-weight: 900;
@@ -128,7 +161,7 @@ body {
   /* border: 2px solid red; */
   font-family: "Manrope", sans-serif;
 }
-/***********************Main**********************************/
+/*********************************************Main********************************************************/
 .main {
   display: flex;
   flex-direction: column;
@@ -142,7 +175,7 @@ body {
   position: relative;
 }
 
-/***********************Header & Navbar***********************/
+/****************Header & Navbar***************/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -192,7 +225,7 @@ body {
   margin-top: 1.4em;
 }
 
-/*********************Hero***************************/
+/*********************Hero-Part*********************/
 .hero {
   display: flex;
   flex-direction: column;
@@ -203,7 +236,7 @@ body {
   padding: 8em 4em;
 }
 
-/********************logo-container********************/
+/********************logo Part********************/
 .logo-container {
   margin-top: 3em;
   width: 88%;
@@ -230,7 +263,180 @@ body {
   scale: 1.2;
 }
 
-/*************************************Media Queries*********************************/
+/*********************************************Available-houses-section********************************/
+.available-houses-section {
+  padding: 3em 1em;
+  /* border: 2px solid red; */
+  background-color: var(--color-white-003);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.available-houses-section > .heading-primary {
+  color: var(--color-black-002);
+  text-align: center;
+}
+.house-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.card-list-top,
+.card-list-mid,
+.card-list-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  height: 380px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+.card-1,
+.card-7,
+.card-6 {
+  align-self: flex-start;
+}
+.card-3,
+.card-4,
+.card-9 {
+  align-self: flex-end;
+}
+
+.card-content {
+  width: 310px;
+  height: 320px;
+  /* border: 2px solid red; */
+  border-radius: 30px;
+  background-image: url("./Photos/cardImage1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: all 2s ease;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.card-2 > .card-content {
+  background-image: url("./Photos/cardImage2.png");
+}
+.card-3 > .card-content {
+  background-image: url("./Photos/cardImage3.png");
+}
+.card-4 > .card-content {
+  background-image: url("./Photos/cardImage4.png");
+}
+.card-5 > .card-content {
+  background-image: url("./Photos/cardImage5.png");
+}
+.card-6 > .card-content {
+  background-image: url("./Photos/cardImage6.png");
+}
+.card-7 > .card-content {
+  background-image: url("./Photos/cardImage7.png");
+}
+.card-8 > .card-content {
+  background-image: url("./Photos/cardImage8.png");
+}
+.card-9 > .card-content {
+  background-image: url("./Photos/cardImage9.png");
+}
+
+.card-details {
+  display: flex;
+  /* border: 2px solid red; */
+  gap: 3em;
+  width: 90%;
+  justify-content: space-around;
+  background-color: var(--color-white-001);
+  padding: 1.5em 1.5em;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.front > .house-name > p {
+  color: var(--color-blue-001);
+}
+.back {
+  transform: translateZ(-100px);
+  flex-direction: row-reverse;
+  gap: 0.5em;
+  background-color: var(--color-black-004);
+  color: white;
+  padding: 1em 1.5em;
+}
+.back > .btn-small-back {
+  all: unset;
+  background-color: var(--color-black-001);
+  font-size: 0.8rem;
+  padding: 1em 3em;
+  text-align: center;
+  border-radius: 30px;
+  transition: all 0.5 ease-in-out;
+}
+.back > .btn-small-back:hover {
+  background-color: var(--color-black-002);
+}
+
+.back > .house-name {
+  transform: scale(-1, 1);
+  font-size: 0.8rem;
+}
+.back > .btn-small-back {
+  transform: scale(-1, 1);
+}
+
+.card:hover .rotate {
+  transform: rotateY(0.5turn);
+}
+
+/**********************************************Media Queries*****************************************/
+@media screen and (max-width: 1000px) {
+  .card-list-top,
+  .card-list-mid,
+  .card-list-bottom {
+    gap: 5em;
+    height: 100%;
+  }
+  .house-cards-container {
+  }
+
+  .card {
+  }
+  .card-content {
+    gap: 5em;
+  }
+  .card-1,
+  .card-7,
+  .card-6 {
+    align-self: center;
+  }
+  .card-3,
+  .card-4,
+  .card-9 {
+    align-self: center;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .heading-primary {
     font-size: 1.5rem;

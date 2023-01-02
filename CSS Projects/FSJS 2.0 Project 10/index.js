@@ -23,3 +23,29 @@ for (let x of hamburger) {
         });
     })
 }
+
+let frontCards = document.getElementsByClassName("front");
+frontCards = Array.from(frontCards);
+console.log(frontCards)
+
+frontCards.forEach(item => {
+    item.addEventListener("mouseenter", () => {
+        let cards = document.getElementsByClassName("card");
+        cards = Array.from(cards);
+        cards.forEach(x => {
+            let child = x.querySelector(":first-child")
+            child.classList.remove("rotate");
+        })
+
+    })
+    item.addEventListener("mouseleave", () => {
+        let cards = document.getElementsByClassName("card");
+        cards = Array.from(cards);
+        cards.forEach(x => {
+            let child = x.querySelector(":first-child")
+            child.classList.add("rotate");
+        })
+
+    })
+
+})
