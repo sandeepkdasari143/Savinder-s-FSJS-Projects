@@ -23,6 +23,7 @@ html {
   --color-white-002: #cacaca;
   --color-white-003: #f5f7f9;
   --color-green-001: #3b802d;
+  --color-red-001:#ca2121;
 }
 
 /*******************************************Utility Classes************************************************/
@@ -265,7 +266,7 @@ body {
 
 /*********************************************Available-houses-section********************************/
 .available-houses-section {
-  padding: 3em 1em;
+  padding: 6em 1em 3em 1em;
   /* border: 2px solid red; */
   background-color: var(--color-white-003);
   display: flex;
@@ -442,6 +443,16 @@ body {
   top: -5rem;
 }
 
+.feature-image-right {
+  width: 100%;
+  max-width: 380px;
+  height: 400px;
+  min-width: 200px;
+  border-radius: 27px;
+  position: relative;
+  right: 2rem;
+  top: -5rem;
+}
 .early-bird-right {
   display: flex;
   flex-direction: column;
@@ -462,8 +473,137 @@ body {
 }
 .early-bird > div:nth-child(2) > .early-bird-house {
   background-image: url("./Icons/featureImageBg2.png");
+  background-size: 100% 100%;
+}
+/*********************************************Newsletter*******************************************/
+.newsletter {
+  padding: 2em 3em;
+  background-color: var(--color-white-003);
 }
 
+.newsletter-content {
+  padding: 6em 4em;
+  background-color: var(--color-blue-001);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  border-radius: 45px;
+  text-align: center;
+}
+
+.newsletter-content > .para {
+  font-size: 0.9rem;
+}
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.subscribe > .btn-large {
+  background-color: var(--color-white-001);
+  color: var(--color-blue-001);
+}
+.subscribe > .btn-large:hover {
+  color: var(--color-white-001);
+}
+.subscribe > .btn-large:hover::before {
+  background-color: var(--color-black-001);
+}
+
+.subscribe > input {
+  padding: 1.3em 10em 1.3em 4em;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background-color: #4b49d4;
+  background-image: url("./Icons/mail.png");
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 25px;
+}
+.subscribe > input:focus {
+  outline: none;
+  border: none;
+}
+
+.subscribe > input::placeholder {
+  color: var(--color-grey-001);
+  font-size: 0.9rem;
+}
+
+/**********************************************Footer************************************************/
+
+.footer {
+  padding: 4em 5em;
+  background-color: var(--color-white-003);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:4em;
+}
+.footer-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5em;
+  text-align: left;
+}
+
+.footer-left-content > .logo {
+  width: 50%;
+}
+.social-media-icon {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.social-media-icon > a:hover {
+  transform: scale(1.1);
+}
+.footer-left-content > .para {
+  color: var(--color-black-003);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.footer-right-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5em;
+  flex-wrap: wrap;
+}
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  list-style: none;
+  font-size: 0.9rem;
+}
+.footer-links > a {
+  text-decoration: none;
+  color: var(--color-black-003);
+}
+.footer-links > a:hover {
+  color: var(--color-black-001);
+}
+.fa-heart{
+  color: var(--color-red-001);
+}
+.created-by{
+  background-color: var(--color-white-003);
+  text-align: center;
+  padding:3em 5em;
+  font-size: 0.7rem;
+  color:var(--color-black-002);
+}
 /**********************************************Media Queries*****************************************/
 @media screen and (max-width: 1000px) {
   .card-list-top,
@@ -521,6 +661,9 @@ body {
     bottom: -10%;
     padding: 2em 1em;
   }
+  .newsletter {
+    padding: 2em 1em;
+  }
 }
 
 @media screen and (max-width: 510px) {
@@ -558,6 +701,24 @@ body {
     height: 100%;
     top: -1rem;
     left: 2rem;
+  }
+  .feature-image-right {
+    width: 150px;
+    height: 100%;
+    top: -1.3rem;
+    right: 1rem;
+  }
+  .early-bird > div:nth-child(2) > .early-bird-house {
+    background-size: 85% 90%;
+  }
+  .newsletter-content {
+    padding: 4em 1em;
+  }
+  .subscribe > input {
+    padding: 1.5em 2em 1.5em 4em;
+  }
+  .footer-left-content {
+    align-items: center;
   }
 }
 
