@@ -10,3 +10,4 @@
 7. [CSS Project-7 Credit Card Landing Page](https://savinder-credit-card-page.netlify.app/)
 8. [CSS Project-8 Web Hosting Site Landing Page](https://savinder-hosting-site-page.netlify.app/)
 9. [CSS Project-9 Game Website Landing Page](https://savinder-game-landing-page.netlify.app/)
+10. [CSS Project-10 Real Estate Website Landing Page](https://savinder-real-estate-landing-page.netlify.app/)
