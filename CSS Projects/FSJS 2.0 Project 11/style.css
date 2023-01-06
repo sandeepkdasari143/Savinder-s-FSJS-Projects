@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border:1px solid red; */
+  /* border: 1px solid red;*/
 }
 
 /************************Declaring CSS Variables*************************/
@@ -28,13 +28,35 @@
   font-family: sans-serif;
   border-radius: 7px;
 }
+.heading_primary {
+  font-size: 2rem;
+}
+.heading_secondary {
+  font-size: 1rem;
+}
+.para {
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #888888;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+.icons {
+  width: 18px;
+}
 
 body {
   width: 100vw;
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Manrope", sans-serif;
+  color: var(--color-white-001);
+  overflow-x: hidden;
 }
+
+/**************************************Container****************************************/
 .container {
   background-color: var(--color-black-001);
   display: flex;
@@ -42,6 +64,7 @@ body {
   position: relative;
   height: 100vh;
 }
+/*************************************Header*********************************************/
 header {
   display: flex;
   justify-content: space-between;
@@ -50,6 +73,8 @@ header {
   flex-wrap: wrap;
   gap: 5em;
 }
+
+/***Hamburger_icon***/
 
 .hamburger_icon {
   all: unset;
@@ -99,6 +124,7 @@ header {
   transform: rotate(90deg) translateX(-8px);
 }
 
+/*Navbar*/
 nav {
   display: flex;
   justify-content: center;
@@ -126,6 +152,83 @@ nav > ul {
   color: var(--color-white-001);
 }
 
+/*************************************Hero****************************************/
+.hero {
+  /* border: 2px solid red; */
+  padding-right: 10em;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.8em;
+}
+
+.on_ear_logo {
+  text-align: center;
+  /* border: 2px solid red; */
+}
+.hero_text_container > .on_ear_logo > img {
+  width: 80%;
+  min-width: 100px;
+}
+.hero > .hero_text_container > .hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.7rem;
+}
+.hero > .hero_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.hero_text > .btn_primary {
+  padding: 1em 1.3em;
+
+  /* border: 2px solid yellow; */
+}
+.shooping__bag_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.shooping__bag_cart > .heading_primary {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.shooping__bag_cart > .para {
+  font-size: 0.8rem;
+}
+.main_image {
+  /* border: 2px solid red; */
+  width: 25%;
+  position: absolute;
+  left: 30%;
+  top: -8rem;
+  right: 0;
+  bottom: 0;
+}
+.main_image > img {
+  width: 80%;
+  min-width: 70px;
+}
+/***********************************Media Queries*********************************/
+@media screen and (max-width: 1150px) {
+  .hero {
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1.5em;
+  }
+  .main_image {
+    position: static;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   header {
     justify-content: center;
@@ -136,6 +239,16 @@ nav > ul {
     gap: 2em;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .hero_text_container > .heading_primary {
+    font-size: 1.3rem;
+  }
+  .hero_text > .para {
+    font-size: 0.6rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .hamburger_icon {
     display: inline;
@@ -144,7 +257,7 @@ nav > ul {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 5em;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     left: 0;
     top: 0;
@@ -162,5 +275,17 @@ nav > ul {
   }
   .nav_show {
     transform: translateX(0%);
+  }
+  .shooping__bag_cart > .heading_primary {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .shooping__bag_cart > .para {
+    font-size: 0.6rem;
+  }
+  .shooping__bag_cart {
+    justify-content: flex-start;
+
+    gap: 1em;
   }
 }
