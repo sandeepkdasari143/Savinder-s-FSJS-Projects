@@ -3,14 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red;*/
+  /* border: 1px solid red; */
 }
 
 /************************Declaring CSS Variables*************************/
 
 :root {
+  --color-black-000: #000000;
   --color-black-001: #0f0f10;
   --color-black-002: #1e1e21;
+  --color-black-003: #181a1b;
   --color-white-001: #f2f2f3;
   --color-white-002: #505153;
   --color-crimson-001: #ff0f32;
@@ -27,6 +29,7 @@
   font-size: 0.9rem;
   font-family: sans-serif;
   border-radius: 7px;
+  cursor: pointer;
 }
 .heading_primary {
   font-size: 2rem;
@@ -206,6 +209,7 @@ nav > ul {
 .main_image {
   /* border: 2px solid red; */
   width: 25%;
+  height: 30%;
   position: absolute;
   left: 30%;
   top: -8rem;
@@ -246,6 +250,167 @@ nav > ul {
     transform: translateX(-100%);
   }
 }
+/*************************************Specs**********************************/
+.specs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+}
+.specs_main_content {
+  display: flex;
+  gap: 3em;
+  padding: 3em 1em;
+}
+.specs_features {
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.8em;
+  padding: 3em 1em;
+}
+.specs_features > :first-child,
+.specs_features > :last-child {
+  align-self: center;
+}
+
+.specs_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.specs_card > img {
+  width: 13px;
+}
+.specs_card > .battery {
+  width: 21px;
+}
+.specs_card > .heading_secondary {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  padding-top: 0.3em;
+}
+.specs_card > .para {
+  font-size: 0.7rem;
+  padding-top: 0.5em;
+}
+.specs_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.5em;
+  /* border: 2px solid red; */
+  width: 150%;
+}
+.specs_image > img {
+  width: 200%;
+  max-width: 300px;
+  min-width: 150px;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+.specs_image > img:hover {
+  scale: 1.3;
+}
+
+/************************************Case Section**********************************/
+.case {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 3em 1em;
+  justify-content: center;
+  align-items: center;
+}
+.case_main_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.case_image > img {
+  width: 100%;
+  max-width: 250px;
+  min-width: 110px;
+ 
+}
+
+
+.case_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3em;
+  min-width: 150px;
+}
+.case_description > .btn_primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 1.7em;
+}
+.case_description > .btn_primary > img {
+  width: 20px;
+}
+
+/***********************************Buy Now Section********************************/
+.buy_now_section {
+  margin:3em 0;
+  align-self: center;
+  background-color: var(--color-black-003);
+  padding: 3em 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.buy_now_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em 2em;
+  gap: 1em;
+  min-width:150px;
+}
+.buy_now_container > .para {
+  font-size: 0.8rem;
+}
+
+.buy_now_container > .btn_primary {
+  background-color: var(--color-black-000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+  padding: 1em 1.8em;
+}
+.buy_now_image{
+  display: flex;
+  justify-content: center;
+  
+}
+.buy_now_image > img {
+  width: 100%;
+  min-width: 150px;
+  cursor: pointer;
+  transition: scale 350ms ease-in-out;
+}
+
+
+  
+
+
 
 /***********************************Media Queries*********************************/
 @media screen and (max-width: 1150px) {
@@ -273,6 +438,27 @@ nav > ul {
 }
 
 @media screen and (max-width: 700px) {
+  .buy_now_container > .heading_secondary {
+    font-size: 0.7rem;
+  }
+  .buy_now_container > .para {
+    font-size: 0.6rem;
+  }
+  .buy_now_section {
+    gap:1em;
+    padding:4em 1em;
+  }
+  .buy_now_container{
+    padding:2em 0;
+  }
+  .buy_now_container > .btn_primary {
+    font-size: 0.7rem;
+  }
+  .buy_now_image > img{
+    width:80%;
+  }
+}
+@media screen and (max-width: 700px) {
   .hero_text_container > .heading_primary {
     font-size: 1.3rem;
   }
@@ -294,8 +480,17 @@ nav > ul {
   .clients > .client_img {
     padding: 1em;
   }
+
 }
 
+@media screen and (max-width: 540px) {
+  .case_description > .para {
+    font-size: 0.6rem;
+  }
+  .case_main_content {
+    gap: 0.5em;
+  }
+}
 @media screen and (max-width: 500px) {
   .hamburger_icon {
     display: inline;
@@ -332,8 +527,19 @@ nav > ul {
   }
   .shooping__bag_cart {
     justify-content: flex-start;
-
     gap: 1em;
   }
-  
+  .specs_main_content {
+    gap: 0;
+  }
+  .specs_main_content,
+  .specs {
+    padding: 3em 0;
+  }
+  .specs_features {
+    padding: 3em 1em;
+  }
+  .specs_image > img:hover {
+    scale: 1;
+  }
 }
