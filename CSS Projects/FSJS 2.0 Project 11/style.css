@@ -340,9 +340,7 @@ nav > ul {
   width: 100%;
   max-width: 250px;
   min-width: 110px;
- 
 }
-
 
 .case_description {
   display: flex;
@@ -365,7 +363,7 @@ nav > ul {
 
 /***********************************Buy Now Section********************************/
 .buy_now_section {
-  margin:3em 0;
+  margin: 3em 0;
   align-self: center;
   background-color: var(--color-black-003);
   padding: 3em 4em;
@@ -381,7 +379,7 @@ nav > ul {
   align-items: flex-start;
   padding: 2em 2em;
   gap: 1em;
-  min-width:150px;
+  min-width: 150px;
 }
 .buy_now_container > .para {
   font-size: 0.8rem;
@@ -395,10 +393,9 @@ nav > ul {
   gap: 0.7em;
   padding: 1em 1.8em;
 }
-.buy_now_image{
+.buy_now_image {
   display: flex;
   justify-content: center;
-  
 }
 .buy_now_image > img {
   width: 100%;
@@ -407,10 +404,101 @@ nav > ul {
   transition: scale 350ms ease-in-out;
 }
 
+/**********************************Choose Your Styles section************************/
+.choose_style_container {
+  padding: 3em 1em;
+  align-self: center;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  width: 100%;
+}
 
-  
+.choose_style_logo > img {
+  width: 100%;
+}
 
-
+.styles_type {
+  /* border: 2px solid rgb(60, 136, 9); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4em;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 650px;
+}
+.card {
+  /* border: 1px solid green; */
+  padding: 4em 5em;
+  background-color: var(--color-black-003);
+  border-radius: 7px;
+  position: relative;
+  margin: 2em 0;
+  cursor: pointer;
+  transition: scale 350ms ease-in-out;
+}
+.card:hover {
+  scale: 1.2;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  background-image: url(./Photos/black.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  top: -50%;
+  bottom: 0;
+  z-index: 2;
+}
+.styles_type > .card_2::before {
+  background-image: url(./Photos/redBlack.png);
+}
+.styles_type > .card_3::before {
+  background-image: url(./Photos/nightBlack.png);
+}
+.styles_type > .card_4::before {
+  background-image: url(./Photos/blue.png);
+}
+.styles_type > .card_5::before {
+  background-image: url(./Photos/twilightGray.png);
+}
+.card_bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.model > p {
+  font-size: 0.7rem;
+  padding: 0.2em 0;
+}
+.model > :nth-child(2){
+  color:var(--color-white-002);
+}
+.shopping_icon {
+  background-color: var(--color-black-000);
+  padding: 0.4em 0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /***********************************Media Queries*********************************/
 @media screen and (max-width: 1150px) {
@@ -445,17 +533,22 @@ nav > ul {
     font-size: 0.6rem;
   }
   .buy_now_section {
-    gap:1em;
-    padding:4em 1em;
+    gap: 1em;
+    padding: 4em 1em;
   }
-  .buy_now_container{
-    padding:2em 0;
+  .buy_now_container {
+    padding: 2em 0;
   }
   .buy_now_container > .btn_primary {
     font-size: 0.7rem;
   }
-  .buy_now_image > img{
-    width:80%;
+  .buy_now_image > img {
+    width: 80%;
+  }
+  .styles_type {
+    min-width: auto;
+    width: 100%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 700px) {
@@ -480,7 +573,6 @@ nav > ul {
   .clients > .client_img {
     padding: 1em;
   }
-
 }
 
 @media screen and (max-width: 540px) {
