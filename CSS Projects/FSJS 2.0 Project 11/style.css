@@ -16,6 +16,10 @@
   --color-white-001: #f2f2f3;
   --color-white-002: #505153;
   --color-crimson-001: #ff0f32;
+  --color-red-001: #b8081c;
+  --color-yellow-001: #944e0d;
+  --color-blue-001: #001335;
+  --color-twilight-grey-001: #d0b094;
 }
 
 /*****************************Utility Classes**********************************/
@@ -442,8 +446,9 @@ nav > ul {
   transition: scale 350ms ease-in-out;
 }
 .card:hover {
-  scale: 1.2;
+  scale: 1.3;
 }
+
 .card::before {
   content: "";
   position: absolute;
@@ -472,6 +477,26 @@ nav > ul {
 .styles_type > .card_5::before {
   background-image: url(./Photos/twilightGray.png);
 }
+
+.styles_type > .card_1:hover {
+  background-color: var(--color-black-000);
+}
+.styles_type > .card_2:hover {
+  background-color: var(--color-red-001);
+}
+.styles_type > .card_3:hover {
+  background-color: var(--color-yellow-001);
+}
+.styles_type > .card_4:hover {
+  background-color: var(--color-blue-001);
+}
+.styles_type > .card_5:hover {
+  background-color: var(--color-twilight-grey-001);
+}
+.styles_type > .card_2:hover .model > :nth-child(1) {
+  color: black;
+}
+
 .card_bottom {
   position: absolute;
   width: 100%;
@@ -489,8 +514,8 @@ nav > ul {
   font-size: 0.7rem;
   padding: 0.2em 0;
 }
-.model > :nth-child(2){
-  color:var(--color-white-002);
+.model > :nth-child(2) {
+  color: var(--color-white-002);
 }
 .shopping_icon {
   background-color: var(--color-black-000);
