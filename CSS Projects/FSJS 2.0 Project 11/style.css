@@ -34,7 +34,7 @@
   border-radius: 7px;
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .btn_primary::before {
   content: "";
@@ -50,7 +50,7 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 350ms ease-in-out;
-  z-index: -10;
+  z-index: -1;
 }
 .btn_primary:hover::before {
   transform: scaleX(1);
@@ -81,7 +81,6 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--color-white-001);
   overflow-x: hidden;
-  z-index: 1;
 }
 
 /**************************************Container****************************************/
@@ -744,6 +743,7 @@ footer > :first-child {
 @media screen and (max-width: 500px) {
   .hamburger_icon {
     display: inline;
+    z-index: 3;
   }
   nav {
     flex-direction: column;
@@ -758,9 +758,10 @@ footer > :first-child {
     height: 100vh;
     width: 50%;
     max-width: 250px;
-    background-color: var(--color-crimson-001);
+    background-color: var(--color-blue-001);
     transform: translateX(-100%);
     transition: transform 350ms ease-in-out;
+    z-index: 2;
   }
   nav > ul {
     flex-direction: column;
