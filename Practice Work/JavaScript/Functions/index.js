@@ -32,3 +32,16 @@ The winner of Match 2 is ${match_2}`)
 
 //Conclusion --> So functions help us to write clean & concise code based on DRY principle which Don't Repeat Yourself.
 //We have many inbuilt functions such as Number(), our favourite console.log() etc.
+
+//Passing N number of arguments in a function
+
+function add() {
+    console.log(arguments);// Stores our arguments in the form of array
+    let sum = 0;
+    for (args of arguments) {
+        sum = sum + args;
+    }
+    return sum;
+}
+const add1 = add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20);
+console.log(add1);
