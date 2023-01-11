@@ -45,3 +45,19 @@ function add() {
 }
 const add1 = add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20);
 console.log(add1);
+
+//Function calling other function
+
+function cutPizzaSlices(pizzas) {
+    return pizzas * 8;
+}
+function cutBurgerIntoPieces(burgers) {
+    return burgers * 3
+}
+function orderedFastFood(pizza, burger) {
+    const pizzaSlices = cutPizzaSlices(pizza);
+    const burgerPieces = cutBurgerIntoPieces(burger);
+
+    return `The Fast Food that you ordered has ${pizzaSlices} Pizza slices and ${burgerPieces} Burger pieces`;
+}
+console.log(orderedFastFood(2, 3));
