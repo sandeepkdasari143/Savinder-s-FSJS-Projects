@@ -3,21 +3,31 @@
 //- DD-MM-YYYY HH:mm
 //- DD/MM/YYYY HH:mm
 
+function addZeroBeforeSingleDigit(param) {
+    if (param < 10) {
+        param = "0" + param;
+        return param;
+    }
+    return param;
+}
+
 const date = new Date();
 
 const year = date.getFullYear();
 
 let month = date.getMonth() + 1;
-month = month < 10 ? "0" + month : month;
+month = addZeroBeforeSingleDigit(month);
 
 let dateToday = date.getDate();
-dateToday = dateToday < 10 ? "0" + dateToday : dateToday;
+dateToday = addZeroBeforeSingleDigit(dateToday);
 
 let hours = date.getHours();
-hours = hours < 10 ? "0" + hours : hours;
+hours = addZeroBeforeSingleDigit(hours);
 
 let mins = date.getMinutes();
-mins = mins < 10 ? "0" + mins : mins;
+mins = addZeroBeforeSingleDigit(mins)
+
+
 
 //- YYYY-MM-DD HH:mm
 const dateFormat1 = `${year}-${month}-${dateToday} ${hours}:${mins}`;
