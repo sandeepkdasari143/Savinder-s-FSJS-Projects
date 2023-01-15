@@ -1,0 +1,207 @@
+/*******************CSS Reset***************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/*****************Custom Variable Declaration********************/
+:root {
+  --color-white-001: #feffff;
+  --color-skyblue-001: #e4f2ff;
+  --color-black-001: #000000;
+  --color-purple-001: #722ed1;
+  --color-grey-001: #b6b6c5;
+  --color-grey-002: #dedce0;
+}
+
+/***************Utility Classes***********************/
+.logo > a > img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.btn_primary {
+  all: unset;
+  padding: 0.6em 1.8em;
+  font-size: 0.9rem;
+  border-radius: 48px;
+  color: var(--color-purple-001);
+  outline: 1px solid var(--color-purple-001);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.btn_primary::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  outline: 1px solid var(--color-purple-001);
+  border-radius: 48px;
+  background-color: var(--color-purple-001);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms ease-in-out;
+  z-index: -1;
+}
+.btn_primary:hover {
+  color: var(--color-white-001);
+  outline: none;
+}
+
+.btn_primary:hover::before {
+  transform: scaleX(1);
+}
+
+body {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Manrope", sans-serif;
+}
+
+/*************Navbar****************/
+nav {
+  padding: 2em 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  /* border: 2px solid yellow; */
+}
+nav > :first-child {
+  display: none;
+  z-index: 2;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: var(--color-black-001);
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+.hamburger {
+  position: absolute;
+  left: 8%;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hamburger::before {
+  top: -9px;
+}
+.hamburger::after {
+  top: 9px;
+}
+
+.hamburger_menu > .hamburger {
+  transform: rotate(45deg);
+}
+.hamburger_menu > .hamburger::before {
+  opacity: 0;
+}
+.hamburger_menu > .hamburger::after {
+  transform: rotate(90deg) translateX(-10px);
+}
+
+.nav_links_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  /* border: 2px solid rgb(46, 46, 6); */
+}
+
+.nav_links_container > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+.nav_links_container > ul > :first-child {
+  position: relative;
+}
+.nav_links_container > ul > :first-child::before {
+  content: "\005E";
+  position: absolute;
+  transform: rotateX(180deg);
+  top: -2px;
+  right: -17px;
+  cursor: pointer;
+}
+.nav_links {
+  text-decoration: none;
+  color: var(--color-black-001);
+  font-size: 0.9rem;
+  position: relative;
+}
+.nav_links::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: var(--color-black-001);
+  top: 1.6rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 350ms ease-in-out;
+}
+.nav_links:hover::before {
+  transform: scaleX(1);
+}
+
+/*****************************Media Queries*****************************/
+@media screen and (max-width: 780px) {
+  nav {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav > :first-child {
+    display: block;
+  }
+  .nav_links_container {
+    flex-direction: column;
+    position: absolute;
+    background-color: #8bd8ddde;
+    top: 0;
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    width: 40vw;
+    transform: translateX(-100%);
+    transition: transform 350ms ease-in-out;
+  }
+  .nav_links_container > ul {
+    flex-direction: column;
+  }
+  .responsive_navbar {
+    transform: translateX(0%);
+  }
+}
