@@ -186,7 +186,9 @@ nav > :first-child {
     display: block;
   }
   .nav_links_container {
+    padding-top: 8em;
     flex-direction: column;
+    justify-content: flex-start;
     position: absolute;
     background-color: #8bd8ddde;
     top: 0;
@@ -194,7 +196,7 @@ nav > :first-child {
     bottom: 0;
     right: 0;
     height: 100vh;
-    width: 40vw;
+    width: 50vw;
     transform: translateX(-100%);
     transition: transform 350ms ease-in-out;
   }
