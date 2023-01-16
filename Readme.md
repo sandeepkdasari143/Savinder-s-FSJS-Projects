@@ -28,3 +28,7 @@
 # Tailwind Project Link
 
 [VS Code Clone](https://savinder-vs-code-clone.netlify.app/)
+
+# JavaScript Assignment Questions-Answers
+
+[JavaScript Assignment Questions-Answers](https://github.com/SavinderSingh77/FSJS/tree/main/JavaScript%20Assignments)
