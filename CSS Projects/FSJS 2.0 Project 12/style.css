@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid yellow; */
 }
 
 /*****************Custom Variable Declaration********************/
@@ -54,7 +55,18 @@
   color: var(--color-grey-001);
   font-weight: 300;
 }
-
+.top_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: var(--color-purple-001);
+  padding: 0.8em 1.6em;
+  border-radius: 27px;
+  background-color: var(--color-cyan-002);
+  cursor: pointer;
+}
+/*********************************************************************************/
 body {
   width: 100vw;
   max-width: 1440px;
@@ -252,7 +264,7 @@ nav > :first-child {
 
 /*****************************3 Steps Insights***************************/
 .insights {
-  padding: 7em 3em;
+  padding: 10em 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,17 +278,7 @@ nav > :first-child {
   align-items: center;
   gap: 2.5em;
 }
-.awesome_eye {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  color: var(--color-purple-001);
-  padding: 0.8em 1.6em;
-  border-radius: 27px;
-  background-color: var(--color-cyan-002);
-  cursor: pointer;
-}
+
 .insights > .top > .heading_primary {
   text-align: center;
   font-size: 1.3rem;
@@ -308,7 +310,83 @@ nav > :first-child {
   line-height: 1.4rem;
 }
 
+/*****************************Best Stack & pipeline******************************/
+.best_stack,
+.pipeline {
+  padding: 4em 5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4em;
+  flex-wrap: wrap;
+}
+.image_container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_container > img {
+  width: 80%;
+  min-width: 280px;
+  animation: rotate 60s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.best_stack_right,
+.pipeline_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+.best_stack_right > .heading_primary,
+.pipeline_right > .heading_primary {
+  font-size: 1.4rem;
+}
+.best_stack_right > .para,
+.pipeline_right > .para {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.pipeline {
+  flex-direction: row-reverse;
+  padding: 4em 2em;
+}
+.pipeline > .image_container {
+  width: 50%;
+}
+.pipeline > .image_container > img {
+  animation: none;
+  width: 150%;
+}
+
 /*****************************Media Queries*****************************/
+@media screen and (max-width: 1150px) {
+  .insight {
+    padding-bottom: 4em;
+  }
+  .best_stack,
+  .pipeline {
+    justify-content: center;
+  }
+  .best_stack_right,
+  .pipeline_right {
+    align-items: center;
+  }
+  .best_stack_right > .para,
+  .pipeline_right > .para {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 780px) {
   nav {
     justify-content: center;
@@ -358,16 +436,27 @@ nav > :first-child {
   .nav_links_container > ul > :first-child::before {
     all: unset;
   }
-  .insights > .top > .heading_primary{
+  .insights > .top > .heading_primary {
     font-size: 1rem;
   }
-  .insights > .top >.para{
+  .insights > .top > .para {
     font-size: 0.9rem;
   }
   .hero_left > .heading_primary {
     font-size: 1rem;
   }
-  .insights_card>.para{
+  .insights_card > .para {
     font-size: 0.9rem;
+  }
+  .best_stack {
+    padding: 4em 2em;
+  }
+  .best_stack_right > .heading_primary,
+  .pipeline_right > .heading_primary {
+    text-align: center;
+  }
+  .best_stack_right > .para,
+  .pipeline_right > .para {
+    font-size: 1rem;
   }
 }
