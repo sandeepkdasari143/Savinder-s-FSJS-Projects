@@ -12,6 +12,7 @@
   --color-skyblue-001: #e4f2ff;
   --color-black-001: #000000;
   --color-purple-001: #722ed1;
+  --color-purple-002: #2b1e3f;
   --color-grey-001: #88888a;
   --color-grey-002: #dedce0;
   --color-cyan-001: #b3c3c3;
@@ -367,6 +368,49 @@ nav > :first-child {
 .pipeline > .image_container > img {
   animation: none;
   width: 150%;
+}
+
+/*****************************Review Section*****************************/
+.review_section {
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.review_section > blockquote {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-purple-002);
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.cto > p {
+  text-align: center;
+  padding: 0.2em 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.logo_container {
+  padding: 2em 1em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+  border-top: 3px solid var(--color-grey-002);
+  flex-wrap: wrap;
+}
+.logo_container > img {
+  width: 120px;
 }
 
 /*****************************Media Queries*****************************/
