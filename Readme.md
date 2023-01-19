@@ -24,6 +24,7 @@
 9. [CSS Project-9 Game Website Landing Page](https://savinder-game-landing-page.netlify.app/)
 10. [CSS Project-10 Real Estate Website Landing Page](https://savinder-real-estate-landing-page.netlify.app/)
 11. [CSS Project-11 Beats Music Landing Page](https://savinder-beats-music-landing-page.netlify.app/)
+12. [CSS Project-12 Data Analytics Landing Page](https://savinder-data-analytics-landing-page.netlify.app/)
 
 # Tailwind Project Link
 
