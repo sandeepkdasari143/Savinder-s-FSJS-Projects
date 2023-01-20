@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+}
+.container {
+  position: relative;
+  border: 2px solid red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border: 2px solid rgb(6, 117, 6);
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+.img-container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 550px;
+}
+.card1 {
+  background-image: url("./image/image-1.jpg");
+}
+.card2 {
+  background-image: url("./image/image-2.jpg");
+}
+
+.card3 {
+  background-image: url("./image/image-3.jpg");
+}
+
+.card4 {
+  background-image: url("./image/image-4.jpg");
+}
+
+.card5 {
+  background-image: url("./image/image-5.jpg");
+}
+
+.img-container > img {
+  width: 100%;
+  border: 3px solid tomato;
+}
+.img-container > h2 {
+  position: absolute;
+  z-index: 2;
+  color: tomato;
+  font-size: 3rem;
+  bottom: 10%;
+}
+
+.btn {
+  all: unset;
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgb(206, 199, 199);
+  font-size: 2.5rem;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+ 
+}
+.btn:active{
+    scale : 0.9;
+}
+.next {
+  right: 3%;
+}
+.prev {
+  left: 1%;
+}
