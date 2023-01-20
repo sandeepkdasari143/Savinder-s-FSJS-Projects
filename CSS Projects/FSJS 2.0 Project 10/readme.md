@@ -1,5 +1,4 @@
-# Replicate the Following Output
+### Click on below link to see deployed web page that was build as CSS Project in FSJS 2.0
+<br/>
 
-`Assests are Provided!`
-
-![Project 4](./Real%20Estate%20-%20Desktop.png)
+ [CSS Project-10 Real Estate Website Landing Page](https://savinder-real-estate-landing-page.netlify.app/)
