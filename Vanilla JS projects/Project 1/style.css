@@ -9,6 +9,12 @@ body {
   /* border: 2px solid red; */
   background-color: black;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  overflow: hidden;
+  
 }
 .circle {
   height: 80px;
@@ -27,4 +33,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  height: 20px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1em 2em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 350ms ease-in-out;
+}
+
+.btn:hover {
+  scale: 0.9;
 }
