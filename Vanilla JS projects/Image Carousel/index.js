@@ -3,7 +3,7 @@ const btnNext = document.getElementsByClassName("next")[0];
 const btnPrev = document.getElementsByClassName("prev")[0];
 btnPrev.classList.add("btn_inactive")
 let n = 1;
-console.log(slides, btnNext, btnPrev)
+// console.log(slides, btnNext, btnPrev)
 
 //changing position of images (index*100%) from left
 slides.forEach((slide, index) => {
@@ -16,7 +16,7 @@ btnNext.addEventListener("click", () => {
     }
     if (n >= slides.length) {
         n = slides.length;
-        console.log(n)
+        // console.log(n)
 
     } else {
         btnPrev.classList.remove("btn_inactive")
@@ -24,8 +24,8 @@ btnNext.addEventListener("click", () => {
             slide.style.left = `${(index - n) * 100}%`;
         })
         n++;
-        console.log(n);
-        console.log("Next Clicked")
+        // console.log(n);
+        // console.log("Next Clicked")
     }
 })
 
@@ -42,7 +42,7 @@ btnPrev.addEventListener("click", () => {
         slides.forEach((slide, index) => {
             slide.style.left = `${((index - n) + 1) * 100}%`;
         })
-        console.log(n);
-        console.log("Prev Clicked")
+        // console.log(n);
+        // console.log("Prev Clicked")
     }
 })
