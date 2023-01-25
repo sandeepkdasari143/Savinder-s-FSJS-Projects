@@ -33,6 +33,10 @@ body {
   top: 45%;
   border-radius: 5px;
 }
+
+.btn:active{
+  scale: 0.9;
+}
 .next {
   right: 1rem;
 }
