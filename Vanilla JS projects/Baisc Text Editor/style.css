@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+:root {
+  --color-skyblue: #607d8b;
+}
+
+body {
+  width: 100vw;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  background: url("./background.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100vw;
+  max-width: 1440px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+nav {
+  background-color: rgb(1, 38, 49);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5em;
+}
+.nav_left {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.nav_left > h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  width: 55px;
+  border-radius: 7px;
+}
+
+.nav_right > input {
+  padding: 1em 2em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.nav_right > input:focus {
+  outline: none;
+}
+main {
+  width: 75%;
+  margin: 1em auto;
+}
+
+.textArea {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: #143e3f;
+  color: white;
+}
+.textArea:focus {
+  outline: none;
+}
+
+.textArea::placeholder {
+  color: rgb(158, 155, 155);
+}
+
+.preview_section {
+  width: 75%;
+  margin: auto;
+}
+.preview_section > h3 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  padding: 0em 0;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.preview {
+  color: rgba(8, 8, 8, 0.726);
+  font-size: 1.5rem;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.button_container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.btn {
+  all: unset;
+  cursor: pointer;
+  padding: 1em 2em;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  font-size: 1.1rem;
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.pop_msg {
+  margin: 0.3em auto;
+  width: 75%;
+  padding: 1em 2em;
+  background-color: rgb(26, 25, 25);
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  transition: all 350ms ea;
+}
+.pop_msg > i {
+  cursor: pointer;
+}
