@@ -39,12 +39,16 @@ nav {
   border-radius: 5px;
   font-size: 1rem;
   font-family: "Baloo Bhai 2", cursive;
+  background-color:  #1a1a1a;
+  outline: 1px solid rgb(145, 141, 141);
+  color:#ffffff;
 }
 .nav_right > input::placeholder {
   font-size: 1rem;
 }
 .nav_right > input:focus {
   outline: none;
+  outline: 1px solid rgb(145, 141, 141);
 }
 
 .container {
@@ -75,14 +79,14 @@ main {
   border: none;
   resize: none;
   background-color: #1a1a1a;
-  color: rgb(206, 205, 209);
+  color: rgb(201, 201, 201);
 }
 .textArea:focus {
   outline: none;
 }
 
 .textArea::placeholder {
-  color: rgb(158, 155, 155);
+  color: rgb(192, 192, 192);
 }
 
 .preview_section {
@@ -172,7 +176,6 @@ footer {
   .container {
     margin: 0.5em 2em;
     flex-direction: column;
-    border: 1px solid yellow;
   }
   .button_container {
     flex-direction: row;
@@ -186,4 +189,7 @@ footer {
     padding: 0 1em;
     font-size: 1.3rem;
   }
+}
+.btn_inactive {
+  background-color: #201f1fcc;
 }
