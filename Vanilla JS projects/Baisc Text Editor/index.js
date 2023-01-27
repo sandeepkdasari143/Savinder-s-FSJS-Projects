@@ -54,6 +54,7 @@ textArea.addEventListener("input", () => {
     })
     btnClear.addEventListener("click", () => {
         textArea.value = "";
+        previewText.innerText = textArea.value;
     })
 
 
@@ -81,7 +82,7 @@ searchBtn.addEventListener("input", () => {
         var searchTerm = searchBtn.value;
         var text = previewText.innerText;
         var re = new RegExp(searchTerm, "gi");
-        var TextHigh = text.replace(re, "<mark>"+ searchTerm +"</mark>");
+        var TextHigh = text.replace(re, "<mark>" + searchTerm + "</mark>");
         previewText.innerHTML = TextHigh;
     }
 

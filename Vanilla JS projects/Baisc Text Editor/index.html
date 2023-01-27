@@ -18,39 +18,40 @@
 <body>
     <nav>
         <div class="nav_left">
-            <a class="logo_img" href="./index.html"><img class="logo" src="./T.png" alt="logo.png"></a>
-            <h1>Basic Text Editor</h1>
+            <a class="logo_img" href="./index.html"><img class="logo" src="./photos/logo.png" alt="logo.png"></a>
         </div>
-
-
-
         <div class="nav_right">
             <input id="search" type="text" placeholder="Search Here">
         </div>
-
     </nav>
     <div class="pop_msg">
-        <p>Copy to Clipboard  </p>
+        <p>Copy to Clipboard </p>
         <i id="cross" class="fa-solid fa-xmark"></i>
     </div>
-
-    <main>
-        <textarea class="textArea" name="" id="" cols="" rows="10" 
-           > </textarea>
-    </main>
-
-    <section class="button_container">
-        <button class="btn" data-upper>Convert to Upper Case</button>
-        <button class="btn" data-lower>Convert to Lower Case</button>
-        <button class="btn" data-title>Convert to Title Case</button>
-        <button class="btn" data-remove-space>Remove Extra Spaces</button>
-        <button class="btn" data-copy>Copy to Clipboard</button>
-        <button class="btn" data-clear>Clear Text</button>
-    </section>
-    <section class="preview_section">
-        <h3>Preview</h3>
-        <p class="preview">Preview Your Text Here</p>
-    </section>
+    <div class="container">
+        <div class="text_section">
+            <main>
+                <textarea class="textArea" name="" id="" cols="" rows="10"
+                    placeholder="Enter your text here to analyze"> </textarea>
+            </main>
+            <section class="preview_section">
+                <h3>Preview</h3>
+                <p class="preview">Preview Your Text Here</p>
+            </section>
+        </div>
+        <section class="button_container">
+            <button class="btn" data-upper>Convert to Upper Case</button>
+            <button class="btn" data-lower>Convert to Lower Case</button>
+            <button class="btn" data-title>Convert to Title Case</button>
+            <button class="btn" data-remove-space>Remove Extra Spaces</button>
+            <button class="btn" data-copy>Copy to Clipboard</button>
+            <button class="btn" data-clear>Clear Text</button>
+        </section>
+    </div>
+    <footer>
+        Made with 💖 by Savinder
+    </footer>
+   
 </body>
 
 </html>
