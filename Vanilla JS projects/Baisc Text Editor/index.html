@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 
-    <script src="./index.js" defer></script>
+    <!-- <script src="./index.js" defer></script> -->
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -24,17 +25,20 @@
             <input id="search" type="text" placeholder="Search Here">
         </div>
     </nav>
-    <div class="pop_msg">
-        <p>Copy to Clipboard </p>
-        <i id="cross" class="fa-solid fa-xmark"></i>
-    </div>
+
     <div class="container">
         <div class="text_section">
             <main>
                 <textarea class="textArea" placeholder="Enter your text here to analyze"></textarea>
             </main>
             <section class="preview_section">
-                <h3>Preview</h3>
+                <div class="text_info">
+                    
+                    <p class = "chars" >Characters : 0</p>
+                    <p class = "words">Words : 0 </p>
+                    <p class = "time">Approx time to read : 0</p>
+                </div>
+                
                 <p class="preview">Preview Your Text Here</p>
             </section>
         </div>
