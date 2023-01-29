@@ -8,6 +8,9 @@
 body {
   overflow: hidden;
 }
+section{
+  overflow: hidden;
+}
 .carousel {
   width: 100vw;
   height: 100vh;
