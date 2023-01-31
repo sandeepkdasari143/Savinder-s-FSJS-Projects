@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2em;
+  overflow: hidden;
 }
 
 #border {
@@ -143,5 +144,9 @@ body {
 @media screen and (max-width: 900px) {
   #border {
     height: 80%;
+    padding: 2em 0.5em;
+  }
+  .calculator_buttons{
+    padding:2em 0.5em;
   }
 }
