@@ -32,7 +32,8 @@ body {
 }
 .screen {
   padding: 0 0.5em;
-  height: 50px;
+  height: 60px;
+  min-height: 60px;
   flex-grow: 1;
   width: 100%;
   border-radius: 15px;
