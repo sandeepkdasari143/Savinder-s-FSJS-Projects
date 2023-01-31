@@ -30,19 +30,19 @@ body {
   gap: 0.5em;
 }
 .screen {
-  padding:0 0.5em;
+  padding: 0 0.5em;
   height: 50px;
   flex-grow: 1;
   width: 100%;
   border-radius: 15px;
   border: 1px solid white;
-  color:#ffffff;
+  color: #ffffff;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   text-align: end;
   font-size: 2rem;
-  background-color:#000000;
+  background-color: #161515;
 }
 .calculator_buttons {
   flex-grow: 1;
@@ -138,4 +138,10 @@ body {
 }
 .special_operators:hover {
   background-color: rgba(199, 89, 16, 0.733);
+}
+
+@media screen and (max-width: 900px) {
+  #border {
+    height: 80%;
+  }
 }
