@@ -26,7 +26,7 @@ body {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  padding: 2em 1em;
+  padding: 2em 1.5em;
   gap: 0.5em;
 }
 .screen {
@@ -48,7 +48,7 @@ body {
 }
 .btn {
   all: unset;
-  color: #161515;
+  color: #151616;
   height: 50px;
   width: 50px;
   background-color: #3b3b3b;
@@ -81,17 +81,33 @@ body {
   border-radius: 28px;
 }
 .equal_btn {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   background-color: rgb(13, 202, 107);
   color: white;
 }
 .back_arrow {
-  font-size: 1.4rem;
-  background-color: rgb(190, 8, 235);
+  font-size: 1.8rem;
+  background-color: rgb(202, 73, 13);
   color: white;
 }
 .all_clear {
   font-size: 1.4rem;
-  background-color: rgb(235, 8, 167);
+  background-color: rgb(163, 10, 86);
+  color: white;
+}
+
+.double_zero {
+  grid-column: span 2;
+  width: 100%;
+  border-radius: 40px;
+}
+.plus {
+  font-size: 1.5rem;
+}
+.minus {
+  font-size: 2.5rem;
+}
+.special_operators {
+  background-color: rgb(127, 5, 197);
   color: white;
 }
