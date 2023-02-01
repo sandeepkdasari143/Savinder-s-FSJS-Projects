@@ -19,7 +19,6 @@ body {
 }
 
 #border {
-  height: 100%;
   width: 50%;
   max-width: 400px;
   min-width: 300px;
@@ -32,9 +31,8 @@ body {
 }
 .screen {
   padding: 0 0.5em;
-  height: 60px;
-  min-height: 60px;
-  flex-grow: 1;
+  height: 80px;
+  min-height: 80px;
   width: 100%;
   border-radius: 15px;
   border: 1px solid white;
@@ -142,12 +140,12 @@ body {
   background-color: rgba(199, 89, 16, 0.733);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   #border {
-    height: 80%;
     padding: 2em 0.5em;
   }
-  .calculator_buttons{
-    padding:2em 0.5em;
+  .calculator_buttons {
+    padding: 2em 0.5em;
+    flex-grow: 0;
   }
 }
