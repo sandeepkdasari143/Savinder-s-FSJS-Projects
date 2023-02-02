@@ -1,4 +1,4 @@
-// First letter of the constructor function should be Capital not compulsory but a kind of a practice
+// First letter of the constructor function should be Capital not compulsory but a kind of a convention
 
 //constructor functions can't be created using arrow functions because arrow functions do not have access of "this" keyword
 
