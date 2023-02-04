@@ -210,3 +210,25 @@ tata.batteryCharge();
 tata.brake();
 console.log(tata.__proto__)
 console.log(tata.__proto__.__proto__);
+
+// Inheritance between objects using Object.create()
+const a = {
+    greet (){
+        console.log("Hello! ")
+    },
+    intro(firstName,lastName){
+     this.firstName  = firstName;
+     this.lastName = lastName;
+    }
+}
+
+const b = Object.create(a)
+b.introduce = function(firstName,lastName,course){
+  a.intro.call(this,firstName,lastName)
+    this.course = course
+    
+}
+console.log(b)
+const c = Object.create(b)
+c.introduce("max","henry","BA")
+console.log(c)
