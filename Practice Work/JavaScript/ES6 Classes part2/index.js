@@ -1,6 +1,6 @@
 // Apart from constructor and classes there is an another way to implement inheritance for instances
 //This is Object.create() we often do not use this method a lot
-
+'use strict'
 const personProto = {
     getalert() {
         console.log(`Hello! This is a notification`)
@@ -212,23 +212,44 @@ console.log(tata.__proto__)
 console.log(tata.__proto__.__proto__);
 
 // Inheritance between objects using Object.create()
-const a = {
-    greet (){
-        console.log("Hello! ")
+const Personproto = {
+    calcAge() {
+        return 2023 - this.birthYear;
     },
-    intro(firstName,lastName){
-     this.firstName  = firstName;
-     this.lastName = lastName;
+    init(firstName, birthYear) {
+        this.firstName = firstName;
+        this.birthYear = birthYear;
     }
 }
 
-const b = Object.create(a)
-b.introduce = function(firstName,lastName,course){
-  a.intro.call(this,firstName,lastName)
-    this.course = course
-    
+const Studentproto = Object.create(Personproto);
+Studentproto.init = function (firstName, birthYear, course) {
+    Personproto.init.call(this, firstName, birthYear)
 }
-console.log(b)
-const c = Object.create(b)
-c.introduce("max","henry","BA")
-console.log(c)
+
+console.log(Studentproto)
+const riya = Object.create(Studentproto);
+console.log(riya)
+riya.init('Riya Tiwari', 1998, "JavaScript Development")
+
+// How call method works
+
+const desiDhaba = {
+    dhaba : "Desi Dhaba",
+    city : "Faridabad",
+    orders :[],
+    booking (orderNum, name){
+        this.orders.push({order:`${orderNum}`, customerName : `${name}`})
+        console.log(`${name}'s order is booked and order number is ${orderNum}`)
+
+    }
+}
+console.log(desiDhaba)
+const book = desiDhaba.booking;
+book.call(desiDhaba,785,"Riya")
+const videshiDhaba = {
+    dhaba : "Videshi Dhaba",
+    city : "Chnadigarh",
+    orders :[],
+}
+book.call(videshiDhaba,785,"Riya")
