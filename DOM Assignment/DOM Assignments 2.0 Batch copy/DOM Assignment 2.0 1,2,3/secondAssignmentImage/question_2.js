@@ -27,7 +27,7 @@ const skillPara = document.createElement("p");
 skillPara.style.display = "block"
 skillPara.innerText = "I posses a very good command over the Full Stack Development technologies like MERN which can be seen in my work over GitHub";
 fifthAccordian.appendChild(skillPara)
- accordianHeadings = Array.from(document.querySelectorAll(".accordian > h3"));
+accordianHeadings = Array.from(document.querySelectorAll(".accordian > h3"));
 accordianHeadings.forEach(h3 => {
     h3.style.backgroundColor = "#dadaf8";
     let para = h3.nextElementSibling;
