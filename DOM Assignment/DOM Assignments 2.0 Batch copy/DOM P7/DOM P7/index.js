@@ -15,7 +15,7 @@ submitBtn.disabled = false;
 const inputField = document.getElementsByClassName('main__form-input')[0];
 inputField.disabled = false;
 languages = Array.from(document.querySelectorAll(".main__languages > a"))
-document.body.addEventListener('click', () => {
+submitBtn.addEventListener('click', () => {
     let names = localStorage.getItem('names');
     if (inputField.value) {
         if (names === null) {
@@ -40,6 +40,5 @@ function append() {
         link.innerText = name;
         languagesBox.appendChild(link)
     })
-
 }
 append();
