@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -219,15 +220,69 @@ button {
   list-style: none;
   font-style: 1.1rem;
   font-weight: bold;
-  color: #292928;
+  color: #000000;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 1500ms;
+  display: none;
+}
+
+.popup {
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 1s ease-in-out;
+  
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 0.9rem;
+  padding-right: 1em;
+}
+.popup .close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  margin-left: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #d81406;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
 
 @media screen and (max-width: 800px) {
   .container {
     justify-content: center;
   }
-  nav{
+  nav {
     justify-content: center;
-    gap:2em;
+    gap: 2em;
+  }
+  main > input,
+  main > textarea {
+    width: 100%;
+  }
+  .popup{
+    width:80%;
   }
 }
