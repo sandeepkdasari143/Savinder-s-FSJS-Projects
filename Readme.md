@@ -35,3 +35,12 @@
 # JavaScript Assignment Questions-Answers
 
 [JavaScript Assignment Questions-Answers](https://github.com/SavinderSingh77/FSJS/tree/main/JavaScript%20Assignments)
+
+
+### Vanilla JS Projects
+
+1. [Calculator](https://savinder-calculator.netlify.app)
+2. [Text Editor](https://savinder-text-editor.netlify.app)
+3. [Image Carousel](https://savinder-carousel.netlify.app)
+4. [Create Random Circles on click](https://savinder-create-circles-2.netlify.app)
+5. [Notes App](https://savinder-notes-app.netlify.app/)
