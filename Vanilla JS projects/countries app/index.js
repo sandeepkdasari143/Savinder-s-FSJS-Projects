@@ -77,7 +77,7 @@ function getCountry(country = 'india') {
                 languageList += languages[x] + ", "
             }
             languageList = languageList.slice(0, -2)
-            const area = (data.area / 1000000).toFixed(1) + " Million sq.km"
+            const area = (data.area / 1000000).toFixed(2) + " Million sq.km"
             const currencyObj = data.currencies;
             let currency = "";
             for (let i in currencyObj) {
