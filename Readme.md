@@ -37,7 +37,7 @@
 [JavaScript Assignment Questions-Answers](https://github.com/SavinderSingh77/FSJS/tree/main/JavaScript%20Assignments)
 
 
-### Vanilla JS Projects
+# Vanilla JS Projects
 
 1. [Calculator](https://savinder-calculator.netlify.app)
 2. [Text Editor](https://savinder-text-editor.netlify.app)
