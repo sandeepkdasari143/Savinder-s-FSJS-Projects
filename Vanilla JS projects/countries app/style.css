@@ -20,7 +20,7 @@ body {
   min-height: 500px;
 }
 .x {
-  animation: animate 1s ease-in-out;
+  animation: animate 3s ease-in-out;
 }
 @keyframes animate {
   0% {
@@ -52,7 +52,7 @@ main {
 }
 .ip__worm1,
 .ip__worm2 {
-  animation: worm1 2s linear infinite;
+  animation: worm1 1.5s linear infinite;
 }
 .ip__worm2 {
   animation-name: worm2;
