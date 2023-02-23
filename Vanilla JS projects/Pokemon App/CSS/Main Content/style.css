@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+
+.card {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.card-header {
+  width: 300px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  background-color: #d8d8d8;
+  padding: 2em 2em;
+}
+
+.card-header img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: fill;
+}
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 0.3em;
+}
+
+.type {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#pokemonName {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #020202f1;
+  font-family: "Baloo 2", cursive;
+}
+
+#pokeId {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(3, 3, 3, 0.747);
+  font-family: "Baloo 2", cursive;
+}
+
+#pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}

@@ -11,17 +11,16 @@ body {
   width: 100vw;
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:3em;
 }
 header {
+  width: 100%;
   padding: 1em 2em;
   background-color: var(--color-white-001);
-}
-
-.logo > img {
-  width: 60%;
-  min-width: 250px;
-  display: block;
-  margin: 0 auto;
 }
 #navbar {
   display: flex;
@@ -29,6 +28,25 @@ header {
   align-items: center;
   gap: 2em;
   flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  height: 35px;
+  display: flex;
+  mix-blend-mode: darken;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#pokemonLogo {
+  width: 40%;
+  min-width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
 .searchFieldContainer {
@@ -56,43 +74,6 @@ header {
 #searchInput::placeholder {
   font-size: 1.05rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.btn {
-  background-color: #111827;
-  border: 1px solid transparent;
-  border-radius: 0.75rem;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  flex: 0 0 auto;
-  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-  padding: 0.75rem 2rem;
-  text-align: center;
-  text-decoration: none #6b7280 solid;
-  text-decoration-thickness: auto;
-  transition-duration: 0.2s;
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: auto;
-}
-
-.btn:hover {
-  background-color: #374151;
-}
-
-.btn:focus {
-  box-shadow: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 @media screen and (max-width: 768px) {
