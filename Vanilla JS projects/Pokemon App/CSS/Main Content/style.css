@@ -79,3 +79,17 @@
   color: #cc3737;
   font-size: 1.9rem;
 }
+
+.container > .animation {
+  transition: all 1s ease-in-out;
+  animation: animate 1s ease-in-out;
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

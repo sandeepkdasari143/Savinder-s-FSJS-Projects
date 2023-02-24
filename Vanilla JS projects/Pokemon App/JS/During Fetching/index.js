@@ -1,7 +1,7 @@
 import {
   containerPokeCard,
   prevBtn,
- 
+  nextBtn,
   loader,
   pagination,
   footer,

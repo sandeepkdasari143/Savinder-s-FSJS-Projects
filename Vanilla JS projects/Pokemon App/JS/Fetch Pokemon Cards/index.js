@@ -74,7 +74,7 @@ function showPokemon(offset = 0) {
         data.forEach((data) => {
           const pokemonName =
             data.name[0].toUpperCase() + data.name.slice(1).toLowerCase();
-          containerPokeCard.innerHTML += ` <div class="card">
+          containerPokeCard.innerHTML += ` <div class="card animation">
    <div class="card-header">
      <img
        src="${data.sprites.other.dream_world.front_default}"
@@ -100,6 +100,7 @@ function showPokemon(offset = 0) {
     })
     .finally(() => {
       fetchingEnds();
+      
     });
 }
 
