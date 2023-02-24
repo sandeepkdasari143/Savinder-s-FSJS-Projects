@@ -24,8 +24,8 @@
       src="./JS/Fetch Pokemon Cards/index.js"
       defer
     ></script>
-    <script type="module" src="./JS/Footer/index.js" defer></script>
-    <script type="module" src="./JS/Functions/index.js" defer></script>
+
+    <script type="module" src="./JS/During Fetching/index.js" defer></script>
     <script type="module" src="./JS/Navbar/index.js" defer></script>
     <script type="module" src="./JS/Spinning Loader/index.js" defer></script>
   </head>
@@ -58,13 +58,22 @@
         </div>
       </nav>
     </header>
-
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <!-- Main Content -->
     <div class="container"></div>
     <!-- Pagination -->
     <div id="pagination">
-      <button class="buttonPagination" role="button">Prev</button>
-      <button class="buttonPagination" role="button">Next</button>
+      <button id="prev" class="buttonPagination" role="button">Prev</button>
+      <button id="next" class="buttonPagination" role="button">Next</button>
     </div>
     <!-- Footer -->
     <footer>
