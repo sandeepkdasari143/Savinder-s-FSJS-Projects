@@ -7,6 +7,7 @@ import {
   footer,
 } from "../Constants Variables/index.js";
 
+
 function fetchingStarts() {
   loader.style.display = "inline-block";
   pagination.style.display = "none";
@@ -17,4 +18,4 @@ function fetchingEnds() {
   pagination.style.display = "flex";
   footer.style.display = "flex";
 }
-export{fetchingStarts,fetchingEnds}
+export { fetchingStarts, fetchingEnds };

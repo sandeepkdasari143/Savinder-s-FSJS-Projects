@@ -86,14 +86,13 @@
 }
 
 @keyframes animate {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-
 
 .animation2 {
   transition: all 1s ease-in-out;
@@ -101,10 +100,10 @@
 }
 
 @keyframes animate2 {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }

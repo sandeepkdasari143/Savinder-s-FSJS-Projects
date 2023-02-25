@@ -66,10 +66,12 @@ header {
   border-radius: 27px;
   width: 100%;
   min-width: 250px;
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #searchInput:focus {
-  outline: 2px solid #1e768b;
+  border: 1px solid #1e768b;
 }
 
 #searchInput::placeholder {

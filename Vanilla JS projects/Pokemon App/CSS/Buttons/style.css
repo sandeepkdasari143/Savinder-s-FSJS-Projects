@@ -135,6 +135,10 @@
 .buttonPagination:focus {
   opacity: 0.9;
 }
-#pagination > .inactive{
+#pagination > .inactive {
   background-color: #757575;
+}
+
+.buttonPagination:active {
+  scale: 0.9;
 }
