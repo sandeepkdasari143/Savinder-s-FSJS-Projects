@@ -5,8 +5,11 @@ import {
   loader,
   pagination,
   footer,
+  backBtn,
+  evolutionHeading,
 } from "../Constants Variables/index.js";
 import { fetchingStarts, fetchingEnds } from "../During Fetching/index.js";
+import { count } from "../Pagination/index.js";
 
 function showPokemon(offset = 0) {
   fetchingStarts();
@@ -70,6 +73,12 @@ function evolution() {
 
   evolution.forEach((btn) => {
     btn.addEventListener("click", (e) => {
+      fetchingStarts();
+      containerPokeCard.style.flexDirection = "column";
+      window.scrollTo(0, 0);
+      backBtn.style.display = "block";
+      pagination.style.display = "none";
+      evolutionHeading.style.display = "block";
       const pokeName =
         e.target.parentElement.previousElementSibling.innerText.toLowerCase();
       fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeName}`)
@@ -89,7 +98,9 @@ function evolution() {
             chain.push(current.species.name);
             current = current.evolves_to[0];
           } while (current !== undefined);
-          console.log(chain);
+          evolutionHeading.innerText = `Evolution Chain of ${
+            chain[0][0].toUpperCase() + chain[0].slice(1).toLowerCase()
+          }`;
           containerPokeCard.innerHTML = "";
           const chainApis = chain.map((item) =>
             fetch(`https://pokeapi.co/api/v2/pokemon/${item}`).then(
@@ -101,15 +112,45 @@ function evolution() {
           Promise.all(chainApis).then((data) => {
             console.log(data);
             data.forEach((data) => {
-              containerPokeCard.innerHTML += `<div class="card-header">
-              <img
-                src="${data.sprites.other.dream_world.front_default}"
-                alt="pokemon"
-              />
-            </div>`;
+              containerPokeCard.innerHTML += `<div class = "evolution animation"> 
+            <img src="${
+              data.sprites.other.dream_world.front_default
+            }" alt="pokemon"/>
+            <div class = "evolutionInfo">
+            <h3>#${data.id}</h3>
+            <h3>${
+              data.name[0].toUpperCase() + data.name.slice(1).toLowerCase()
+            }</h3>
+            </div>
+            </div>
+            <div class="container001">
+             <div class="arrow"></div> 
+             <div class="arrow"></div>   
+            <div class="arrow"></div>
+           </div>
+            `;
             });
+
+            const container001 = Array.from(
+              document.getElementsByClassName("container001")
+            );
+            container001[container001.length - 1].style.display = "none";
+            console.log(container001);
           });
+        })
+        .catch((error) => {})
+        .finally(() => {
+          fetchingEnds();
+          pagination.style.display = "none";
         });
     });
   });
 }
+
+backBtn.addEventListener("click", () => {
+  showPokemon(count);
+  backBtn.style.display = "none";
+  pagination.style.display = "flex";
+  evolutionHeading.style.display = "none";
+  containerPokeCard.style.flexDirection = "row";
+});

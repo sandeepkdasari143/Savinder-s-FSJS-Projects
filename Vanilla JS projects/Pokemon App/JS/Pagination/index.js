@@ -47,3 +47,6 @@ prevBtn.addEventListener("click", () => {
 
 prevBtnState(count);
 nextBtnState(count);
+
+export {count}
+
