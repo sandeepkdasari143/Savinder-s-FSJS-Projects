@@ -93,3 +93,18 @@
     opacity: 1;
   }
 }
+
+
+.animation2 {
+  transition: all 1s ease-in-out;
+  animation: animate2 1s ease-in-out;
+}
+
+@keyframes animate2 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

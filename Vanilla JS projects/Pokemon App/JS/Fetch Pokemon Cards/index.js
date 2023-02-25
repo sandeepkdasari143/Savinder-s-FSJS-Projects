@@ -54,8 +54,9 @@ import { fetchingStarts, fetchingEnds } from "../During Fetching/index.js";
 //     });
 // }
 function showPokemon(offset = 0) {
-  containerPokeCard.innerHTML = "";
   fetchingStarts();
+  containerPokeCard.innerHTML = "";
+
   const request = fetch(
     `https://pokeapi.co/api/v2/pokemon?limit=21&offset=${offset}`
   );
@@ -69,7 +70,6 @@ function showPokemon(offset = 0) {
       const arrOfIndividualPromises = individualPokemonData.map((api) =>
         fetch(api).then((response) => response.json())
       );
-
       Promise.all(arrOfIndividualPromises).then((data) => {
         data.forEach((data) => {
           const pokemonName =
@@ -96,11 +96,9 @@ function showPokemon(offset = 0) {
     })
     .catch((error) => {
       containerPokeCard.innerHTML = `<h2 class = "displayError"> OOPS! Some Error Occured!</h2>`;
-      console.log(error);
     })
     .finally(() => {
       fetchingEnds();
-      
     });
 }
 
