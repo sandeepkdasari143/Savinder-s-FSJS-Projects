@@ -81,8 +81,8 @@
 }
 
 .container > .animation {
-  transition: all 1s ease-in-out;
-  animation: animate 1s ease-in-out;
+  transition: all 350ms ease-in-out;
+  animation: animate 350ms ease-in-out;
 }
 
 @keyframes animate {
@@ -95,8 +95,8 @@
 }
 
 .animation2 {
-  transition: all 1s ease-in-out;
-  animation: animate2 1s ease-in-out;
+  transition: all 3s ease-in-out;
+  animation: animate2 3s ease-in-out;
 }
 
 @keyframes animate2 {
@@ -195,9 +195,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media screen and (max-width:500px) {
-  #pokemonChain{
+@media screen and (max-width: 500px) {
+  #pokemonChain {
     font-size: 1.9rem;
   }
-  
 }

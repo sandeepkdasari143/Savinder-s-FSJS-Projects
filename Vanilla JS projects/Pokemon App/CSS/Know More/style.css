@@ -1,0 +1,126 @@
+.knowMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 5em;
+}
+* {
+}
+
+.knowMore img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+#box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+}
+#pokenameKnowMore {
+  font-size: 3rem;
+  color: rgb(43, 3, 80);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.stats > span {
+  font-size: 1.3rem;
+  color: rgb(29, 29, 29);
+  background-color: aquamarine;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+::selection {
+  background: salmon;
+  color: white;
+}
+
+b {
+  font-size: 31px;
+}
+.progressBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: start;
+}
+
+.progress {
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px #b0b0;
+  backdrop-filter: blur(2px) brightness(101%);
+  border-radius: 25px;
+  background-color: #313030;
+  position: relative;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+.bar {
+  background: forestgreen;
+  box-shadow: inset 0px 12px 1.7px #ffffff33;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+}
+#statsText {
+  font-size: 15px;
+}
+
+#pokemonInfo {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS */
+.button-32 {
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9068,
+    #fd746c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 200px;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color:white;
+  cursor:auto
+}
